@@ -55,18 +55,18 @@ surface_reset_target();
 
 
 // Debug drawing of information. Uncomment to see useful numbers.
-draw_text(surfaceWidth + 20, 10, "scrollbarY: " + string(scrollbarY));
-draw_text(surfaceWidth + 20, 25, "textOffset: " + string(textOffset));
-draw_text(surfaceWidth + 20, 40, "nonVisibleHeight: " + string(totalTextHeight - surfaceHeight));
-draw_text(surfaceWidth + 20, 55, "Non-scrollbar area: " + string(surfaceHeight - scrollbarHeight));
+//draw_text(surfaceWidth + 20, 10, "scrollbarY: " + string(scrollbarY));
+//draw_text(surfaceWidth + 20, 25, "textOffset: " + string(textOffset));
+//draw_text(surfaceWidth + 20, 40, "nonVisibleHeight: " + string(totalTextHeight - surfaceHeight));
+//draw_text(surfaceWidth + 20, 55, "Non-scrollbar area: " + string(surfaceHeight - scrollbarHeight));
 
 
 // Draw the "console" with a white border around it to make it look like the
 // text is in a "window".
-draw_surface(textSurface, 18, 10);
+draw_surface(textSurface, x + 8, y);
 draw_rectangle_color(
-	10, 10,
-	surfaceWidth + 18, surfaceHeight + 10,
+	x, y,
+	surfaceWidth + x + 8, surfaceHeight + y,
 	c_white, c_white, c_white, c_white,
 	true
 );
