@@ -31,15 +31,11 @@ if string_length(textToHandle) > 0 {
 	var original = string_copy(textToHandle, 1, string_length(textToHandle));
 	string_lower(textToHandle);
 	var words = StringExtractWords(textToHandle);
-	var command = ds_list_find_value(words, 0);
 	
-	switch (command) {
-	case "quit":
-	case "exit":
-	case "q":
-		game_end();
-	default:
-		ds_list_add(instance_find(obj_ConsoleController, 0).drawLines, textToHandle);
+	parser.command = words;
+	parser.commandFullText = original;
+	with (parser) {
+		event_user(0);
 	}
 	
 	textToHandle = "";
