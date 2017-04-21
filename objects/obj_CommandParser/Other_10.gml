@@ -12,4 +12,3 @@ switch (baseCommand) {
 			event_user(0);
 		}
 }
-ds_list_destroy(command);
