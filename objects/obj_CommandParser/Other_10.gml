@@ -376,23 +376,29 @@ switch (baseCommand) {
 						global.playerExperience -= xpLost;
 						
 						if global.playerExperience < 0 {
-							ds_list_add(toWrite, "You lost a level!");
-							
-							global.playerLevel--;
-							
-							var bonuses = global.levelBonuses[global.playerLevel - 1];
-							ds_list_add(toWrite, "You lost " + string(bonuses[0]) + " HP.");
-							ds_list_add(toWrite, "You lost " + string(bonuses[1]) + " attack.");
-							ds_list_add(toWrite, "You lost " + string(bonuses[2]) + " defense.");
-							global.playerMaxHealth -= bonuses[0];
-							global.playerHealth = global.playerMaxHealth;
-							global.playerAttack -= bonuses[1];
-							global.playerDefense -= bonuses[2];
-							
-							global.playerNextLevelExperience = global.experienceAmount[global.playerLevel - 1];
-							global.playerExperience = global.playerNextLevelExperience + global.playerExperience;
-							if global.playerExperience < 0 {
+							if global.playerLevel == 1 {
 								global.playerExperience = 0;
+							} else {
+								ds_list_add(toWrite, "You lost a level!");
+							
+								global.playerLevel--;
+							
+								var bonuses = global.levelBonuses[global.playerLevel - 1];
+								ds_list_add(toWrite, "You lost " + string(bonuses[0]) + " HP.");
+								ds_list_add(toWrite, "You lost " + string(bonuses[1]) + " attack.");
+								ds_list_add(toWrite, "You lost " + string(bonuses[2]) + " defense.");
+								global.playerMaxHealth -= bonuses[0];
+								global.playerHealth = global.playerMaxHealth;
+								global.playerAttack -= bonuses[1];
+								global.playerDefense -= bonuses[2];
+							
+								global.playerNextLevelExperience = global.experienceAmount[global.playerLevel - 1];
+								global.playerExperience = global.playerNextLevelExperience + global.playerExperience;
+								// Can only lose 1 level at a time. Losing more than one at a time is more than
+								// I want to code right now.
+								if global.playerExperience < 0 {
+									global.playerExperience = 0;
+								}
 							}
 						}
 					}
