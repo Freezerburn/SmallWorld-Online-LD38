@@ -58,11 +58,13 @@ global.dailyQuestTimeCost = 5;
 global.eventTimeCost = 15;
 
 global.playerLevel = 1;
+global.playerTotalExperience = 0;
 global.playerExperience = 0;
-global.playerNextLevelExperience = 100;
+global.playerNextLevelExperience = 20;
 global.playerHealth = 100;
 global.playerMaxHealth = 100;
 global.playerAttack = 10;
+global.playerDamageRandom = 2;
 global.playerDefense = 2;
 global.playerGold = 150;
 
@@ -87,12 +89,17 @@ global.allArmor = [
 	["Tank Top", 150, 1],
 	["Legit Shirt", 250, 2]
 ];
+// Weapons have an additional value: damage randomness
+// This basically is used in a random_range to modify the
+// amount of damage done by a little bit just to make things
+// a little more interesting. Like the attack values, these
+// add to the previous random value.
 global.allWeapons = [
-	["Fists", 0, 1],
-	["Rusty Sword", 50, 9],
-	["Dull Sword", 150, 5],
-	["Tarnished Sword", 250, 10],
-	["Somewhat Sharp Sword", 350, 15]
+	["Fists", 0, 1, 1],
+	["Rusty Sword", 50, 9, 1],
+	["Dull Sword", 150, 5, 2],
+	["Tarnished Sword", 250, 10, 5],
+	["Somewhat Sharp Sword", 350, 15, 8]
 ];
 global.allShields = [
 	["None", 0, 0],
@@ -110,10 +117,54 @@ global.allBoots = [
 ];
 
 global.experienceAmounts = [
-	200, 400, 800, 1000,
-	1500, 2000, 3000,
-	4500, 7000, 10000,
-	20000, 40000
+	40,   80,
+	100,  140,
+	200,  250,
+	300,  400,
+	550,  700,
+	1000
+];
+// Bonuses have the format+
+// +HP, +attack, +defense
+global.levelBonuses = [
+	[10, 2,  1],
+	[15, 3,  2],
+	[25, 5,  3],
+	[35, 6,  4],
+	[50, 9,  5],
+	[70, 13, 7]
+];
+
+// Monster data has layer:
+// name, hp, attack, damage randomness, defense, xp, xp random
+global.MONSTER_NAME = 0;
+global.MONSTER_HP = 1;
+global.MONSTER_ATTACK = 2;
+global.MONSTER_RANDOM = 3;
+global.MONSTER_DEFENSE = 4;
+global.MONSTER_XP = 5;
+global.MONSTER_XP_RANDOM = 6;
+global.MONSTER_GOLD = 7;
+global.MONSTER_GOLD_RANDOM = 8;
+global.allMonsters = [
+	// easy monsters
+	[
+		["Slime", 10, 3, 1, 1, 2, 2, 5, 2],
+		["Goblin", 15, 4, 2, 2, 5, 3, 10, 5]
+	],
+	
+	// medium monsters
+	[
+		["Orc", 50, 15, 5, 8, 30, 15, 50, 20]
+	],
+	
+	// hard monsters
+	[
+	],
+	
+	// extreme monsters
+	[
+	]
 ];
 
 room_goto_next();

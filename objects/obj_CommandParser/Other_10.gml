@@ -282,8 +282,128 @@ switch (baseCommand) {
 	// Can ONLY use this in the dungeon to level up and stuff?
 	case "fight":
 		if global.currentRoom.name == "Dungeon" {
-			ds_list_add(toWrite, "You fight some monsters and gain experience.");
-			global.currentTimeCost += global.dungeonTimeCost;
+			if ds_list_size(command) > 1 {
+				var monsterKindIdx = -1;
+				switch (command[| 1]) {
+				case "easy":
+					monsterKindIdx = 0;
+					break;
+				case "medium":
+					monsterKindIdx = 1;
+					break;
+				case "hard":
+					monsterKindIdx = 2;
+					break;
+				case "extreme":
+					monsterKindIdx = 3;
+					break;
+				}
+				if monsterKindIdx == -1 {
+					ds_list_add(toWrite, "That is not a valid kind of monster. Valid kinds are:");
+					ds_list_add(toWrite, "    easy, medium, hard, extreme");
+				} else {
+					var allMonsterData = global.allMonsters[monsterKindIdx];
+					var numMonsters = array_length_1d(allMonsterData);
+					var monsterIdx = floor(random_range(0, numMonsters));
+					var monsterData = allMonsterData[monsterIdx];
+					ds_list_add(toWrite, "You wander into the dungeon and encouner a(n) " + monsterData[0]);
+					
+					var damageToBase = global.playerAttack - monsterData[global.MONSTER_DEFENSE];
+					var damageFromBase = monsterData[global.MONSTER_ATTACK] - global.playerDefense;
+					var currentMonsterHP = monsterData[global.MONSTER_HP];
+					var monsterName = monsterData[global.MONSTER_NAME];
+					while global.playerHealth > 0 && currentMonsterHP > 0 {
+						var playerDamageDone = damageToBase + round(
+							random_range(-global.playerDamageRandom, global.playerDamageRandom)
+						);
+						
+						if playerDamageDone <= 0 {
+							ds_list_add(toWrite, "You try your best, but you don't manage to do any damage to the monster.");
+						} else {
+							currentMonsterHP -= playerDamageDone;
+							ds_list_add(toWrite, "You deal " + string(playerDamageDone) + " damage to the "
+								+ monsterName + ".");
+							if currentMonsterHP <= 0 {
+								break;
+							}
+						}
+						
+						var monsterDamageDone = damageFromBase + round(
+							random_range(-monsterData[global.MONSTER_RANDOM], monsterData[global.MONSTER_RANDOM])
+						);
+						if monsterDamageDone <= 0 {
+							ds_list_add(toWrite, "The " + monsterName + " does its best, but it doesn't manage to " +
+								"do any damage to you.");
+						} else {
+							global.playerHealth -= monsterDamageDone;
+							ds_list_add(toWrite, "The " + monsterName + " deals " + string(monsterDamageDone) + 
+								" damage to you.");
+						}
+					}
+					
+					if currentMonsterHP <= 0 {
+						var xpGained = monsterData[global.MONSTER_XP] +
+							round(random_range(0, monsterData[global.MONSTER_XP_RANDOM]));
+						var goldGained = monsterData[global.MONSTER_GOLD] +
+							round(random_range(0, monsterData[global.MONSTER_GOLD_RANDOM]));
+						ds_list_add(toWrite, "You killed the " + monsterData[global.MONSTER_NAME] +
+							" and gained " + string(xpGained) + " experience and " +
+							string(goldGained) + " gold.");
+						global.playerGold += goldGained;
+						global.playerExperience += xpGained;
+						global.playerTotalExperience += xpGained;
+						
+						if global.playerExperience >= global.playerNextLevelExperience {
+							ds_list_add(toWrite, "You gained a level!");
+							
+							var bonuses = global.levelBonuses[global.playerLevel - 1];
+							ds_list_add(toWrite, "You gained " + string(bonuses[0]) + " HP.");
+							ds_list_add(toWrite, "You gained " + string(bonuses[1]) + " attack.");
+							ds_list_add(toWrite, "You gained " + string(bonuses[2]) + " defense.");
+							global.playerMaxHealth += bonuses[0];
+							global.playerHealth = global.playerMaxHealth;
+							global.playerAttack += bonuses[1];
+							global.playerDefense += bonuses[2];
+							
+							global.playerExperience = 0;
+							global.playerNextLevelExperience = global.experienceAmounts[global.playerLevel - 1];
+							global.playerLevel++;
+						}
+					} else {
+						ds_list_add(toWrite, "You died! You have lost 10% of your total experience and went back to town.");
+						var xpLost = round(global.playerTotalExperience * 0.1);
+						global.playerTotalExperience -= xpLost;
+						global.playerExperience -= xpLost;
+						
+						if global.playerExperience < 0 {
+							ds_list_add(toWrite, "You lost a level!");
+							
+							global.playerLevel--;
+							
+							var bonuses = global.levelBonuses[global.playerLevel - 1];
+							ds_list_add(toWrite, "You lost " + string(bonuses[0]) + " HP.");
+							ds_list_add(toWrite, "You lost " + string(bonuses[1]) + " attack.");
+							ds_list_add(toWrite, "You lost " + string(bonuses[2]) + " defense.");
+							global.playerMaxHealth -= bonuses[0];
+							global.playerHealth = global.playerMaxHealth;
+							global.playerAttack -= bonuses[1];
+							global.playerDefense -= bonuses[2];
+							
+							global.playerNextLevelExperience = global.experienceAmount[global.playerLevel - 1];
+							global.playerExperience = global.playerNextLevelExperience + global.playerExperience;
+							if global.playerExperience < 0 {
+								global.playerExperience = 0;
+							}
+						}
+					}
+					
+					global.currentTimeCost += global.dungeonTimeCost;
+				}
+			} else {
+				ds_list_add(toWrite, "You can fight the following kinds of monsters:");
+				ds_list_add(toWrite, "    easy, medium, hard, extreme.");
+			}
+			
 		} else {
 			ds_list_add(toWrite, "You cannot fight anybody here.");
 		}
