@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "192771a2-49c6-4fcc-bb0e-1c4717ae7ca6",
+            "Value": {
+                "id": "3c4d8fdb-3afc-47fa-b87d-b0360504193d",
+                "resourcePath": "sprites\\spr_PenaltyL1_DateNightGirlfriend\\spr_PenaltyL1_DateNightGirlfriend.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1947210d-18fa-4953-ad06-7509b33ff171",
             "Value": {
                 "id": "ba911408-3406-4d87-b5bc-2ae6ebfb746e",
@@ -116,6 +124,14 @@
                 "id": "bc01ba2c-808e-4c57-947a-bea0b399493e",
                 "resourcePath": "scripts\\UpdateCursorPos\\UpdateCursorPos.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2761118d-2088-4cbe-bd31-662b4ecb689d",
+            "Value": {
+                "id": "650b704b-6153-450b-9815-e343e8e61a24",
+                "resourcePath": "objects\\obj_WarningL1_FamilyDinner\\obj_WarningL1_FamilyDinner.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -319,6 +335,14 @@
             }
         },
         {
+            "Key": "7f265de3-127f-4349-87c3-819dab525f97",
+            "Value": {
+                "id": "f2733fbf-1f00-4a25-9e3d-d4f76a0d65cd",
+                "resourcePath": "objects\\obj_PenaltyL1_DateNightGirlfriend\\obj_PenaltyL1_DateNightGirlfriend.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8594c8f0-b4d0-44d0-8605-33c5edb955bb",
             "Value": {
                 "id": "042aa343-4704-45ac-b679-d004bf261df3",
@@ -503,6 +527,14 @@
             }
         },
         {
+            "Key": "c71e4739-e8a8-4312-869f-241a536f7e48",
+            "Value": {
+                "id": "5c2134dc-8a81-4f09-8684-6ebaa0868414",
+                "resourcePath": "objects\\obj_PenaltySMS\\obj_PenaltySMS.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c8ec64d4-d9fd-4e34-a98d-45864a928a0d",
             "Value": {
                 "id": "66eff584-35aa-4f15-a36a-ba0f89df7f2a",
@@ -604,6 +636,14 @@
                 "id": "9384b183-a22a-4b40-9d28-ca2579a91fd2",
                 "resourcePath": "objects\\obj_WarningL1_DateNightGirlfriend\\obj_WarningL1_DateNightGirlfriend.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e6c4539d-0609-4c9a-9382-9d78ea8bec32",
+            "Value": {
+                "id": "f8edec11-7efd-472c-8fde-1e68814236d9",
+                "resourcePath": "sprites\\spr_L1_FamilyDinner\\spr_L1_FamilyDinner.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

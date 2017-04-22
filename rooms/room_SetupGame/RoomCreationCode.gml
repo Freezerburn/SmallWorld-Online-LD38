@@ -1,4 +1,4 @@
-show_debug_overlay(true);
+//show_debug_overlay(true);
 
 global.roomMapping = ds_map_create();
 global.currentRoom = undefined;
@@ -27,15 +27,20 @@ global.warningShown = false;
 // Three pools of things: mild, bad, severe
 // Only one pool of positive things? Or should how bad you're into the game reflect
 // what happens for positive things?
+global.lastWarningDef = -1;
 global.warningDefs = ds_list_create();
 ds_list_add(global.warningDefs, ds_list_create()); // mild pool
 ds_list_add(global.warningDefs[| 0],
-	[obj_WarningL1_DateNightGirlfriend]);
+	[obj_WarningL1_DateNightGirlfriend, 0]);
+//ds_list_add(global.warningDefs[| 0],
+//	[obj_WarningL1_FamilyDinner, 1]);
 ds_list_add(global.warningDefs, ds_list_create()); // bad pool
 ds_list_add(global.warningDefs, ds_list_create()); // severe pool
 
 global.penaltyDefs = ds_list_create();
 ds_list_add(global.penaltyDefs, ds_list_create()); // mild pool
+ds_list_add(global.penaltyDefs[| 0],
+	[obj_PenaltyL1_DateNightGirlfriend]);
 ds_list_add(global.penaltyDefs, ds_list_create()); // bad pool
 ds_list_add(global.penaltyDefs, ds_list_create()); // severe pool
 
