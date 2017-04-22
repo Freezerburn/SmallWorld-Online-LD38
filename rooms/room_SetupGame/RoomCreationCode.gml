@@ -9,6 +9,7 @@ global.currentTimeCost = 0;
 
 global.timeCostBeforePenalty = 100;
 global.moveTimeCost = 1;
+global.blacksmithCostTimeCost = 1;
 global.talkTimeCost = 2;
 global.buyTimeCost = 2;
 global.dungeonTimeCost = 10;
@@ -19,7 +20,7 @@ global.playerHealth = 100;
 global.playerMaxHealth = 100;
 global.playerAttack = 10;
 global.playerDefense = 2;
-global.playerGold = 1000;
+global.playerGold = 5000;
 
 global.playerHelmet = ["None", 0];
 global.playerArmor = ["Rags", 1];
@@ -38,7 +39,9 @@ global.allHelmets = [
 ];
 global.allArmor = [
 	["None", 0, 0],
-	["Rags", 50, 1]
+	["Rags", 50, 1],
+	["Tank Top", 150, 1],
+	["Legit Shirt", 250, 2]
 ];
 global.allWeapons = [
 	["Fists", 0, 1],
@@ -48,12 +51,18 @@ global.allWeapons = [
 	["Somewhat Sharp Sword", 350, 15]
 ];
 global.allShields = [
+	["None", 0, 0],
+	["Pot Lid", 150, 1],
+	["Barrel Lid", 250, 2]
 ];
 global.allPants = [
 	["None", 0, 0],
-	["Rags", 50, 1]
+	["Rags", 50, 1],
+	["Bootie Shorts", 150, 1]
 ];
 global.allBoots = [
+	["None", 0, 0],
+	["Worn Out Sandals", 150, 1]
 ];
 
 room_goto_next();
