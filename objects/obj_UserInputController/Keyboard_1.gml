@@ -16,4 +16,6 @@ if keyboard_lastkey == vk_backspace && canKey {
 	keyboard_lastchar = "";
 	canKey = false;
 	alarm[0] = minTimeBetweenKey;
+	
+	audio_play_sound(snd_KeyClick, 10, false);
 }

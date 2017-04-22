@@ -11,6 +11,7 @@ if keyboard_lastkey == vk_return {
 	currentHorzLoc = startingHorzLoc;
 	UpdateCursorPos(cursor, currentHorzLoc);
 		
+	audio_play_sound(snd_KeyClick2, 10, false);
 	keyboard_lastkey = -1;
 	keyboard_lastchar = "";
 }
@@ -23,6 +24,7 @@ if keyboard_lastkey != -1 && keyboard_lastkey != vk_backspace {
 	currentHorzLoc += string_width(keyboard_lastchar) + fontHorzBuffer;
 	UpdateCursorPos(cursor, currentHorzLoc);
 	
+	audio_play_sound(snd_KeyClick2, 10, false);
 	keyboard_lastkey = -1;
 	keyboard_lastchar = "";
 }

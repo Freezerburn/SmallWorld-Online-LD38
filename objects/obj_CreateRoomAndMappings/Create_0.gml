@@ -5,6 +5,9 @@ var layerId = layer_get_id("Instances");
 var startTestRoom = instance_create_layer(0, 0, layerId, obj_StartTestRoom);
 var otherTestRoom = instance_create_layer(0, 0, layerId, obj_OtherTestRoom);
 
-AssociateRoom(startTestRoom, "e", otherTestRoom);
+var townRoom = instance_create_layer(0, 0, layerId, obj_RoomTown);
+var blacksmithRoom = instance_create_layer(0, 0, layerId, obj_RoomBlacksmith);
 
-global.currentRoom = startTestRoom;
+AssociateRoom(townRoom, "n", blacksmithRoom);
+
+global.currentRoom = townRoom;
