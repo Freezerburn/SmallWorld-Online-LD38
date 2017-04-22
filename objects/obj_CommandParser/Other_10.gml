@@ -10,7 +10,12 @@ switch (baseCommand) {
 		
 	// General case of going a direction.
 	case "go":
-		GoDirection(ds_list_find_value(command, 1), toWrite);
+	case "move":
+		if ds_list_size(command) > 1 {
+			GoDirection(ds_list_find_value(command, 1), toWrite);
+		} else {
+			ds_list_add(toWrite, "You must specify a direction to go.");
+		}
 		break
 		
 	// Specific shortcuts for going a direction.
@@ -25,7 +30,30 @@ switch (baseCommand) {
 		GoDirection(baseCommand, toWrite);
 		break;
 		
+	// TODO: Workflow for talking.
+	case "talk":
+		break;
+		
+	// TODO: Implement fighting in the dungeon.
+	// Can ONLY use this in the dungeon to level up and stuff?
+	case "fight":
+		if global.currentRoom.name == "Dungeon" {
+			ds_list_add(toWrite, "You fight some monsters and gain experience.");
+		} else {
+			ds_list_add(toWrite, "You cannot fight anybody here.");
+		}
+		break;
+		
+	// TODO: workflow for logging out.
+	case "logout":
+		break;
+		
+	// TODO: Print help.
+	case "help":
+		break;
+		
 	default:
+		// TODO: Pick from a list of funny responses.
 		ds_list_add(toWrite, "I do not understand");
 }
 
