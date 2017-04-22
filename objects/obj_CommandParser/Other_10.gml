@@ -116,16 +116,16 @@ switch (baseCommand) {
 							global.playerDefense += nextHelmetDef[2];
 							global.playerHelmet[0] = nextHelmetDef[0];
 							global.playerHelmet[1]++;
+							
+							if EquipmentHasNext(global.allHelmets, global.playerHelmet) {
+								nextHelmetDef = EquipmentGetNextDef(global.allHelmets, global.playerHelmet);
+								ds_list_add(toWrite, EquipmentCost(nextHelmetDef, "helmet"));
+							} else {
+								ds_list_add(toWrite, "Blacksmith: \"You have bought all the helmets I have, my friend.\"");
+							}
 						} else {
 							ds_list_add(toWrite, "Blacksmith: \"You cannot afford that! It costs " +
 								string(nextHelmetDef[1]) + " gold.\"");
-						}
-						
-						if EquipmentHasNext(global.allHelmets, global.playerHelmet) {
-							nextHelmetDef = EquipmentGetNextDef(global.allHelmets, global.playerHelmet);
-							ds_list_add(toWrite, EquipmentCost(nextHelmetDef, "helmet"));
-						} else {
-							ds_list_add(toWrite, "Blacksmith: \"You have bought all the helmets I have, my friend.\"");
 						}
 					} else {
 						ds_list_add(toWrite, "Blacksmith: \"I have no more helmets for you my friend.\"");
@@ -141,16 +141,16 @@ switch (baseCommand) {
 							global.playerDefense += nextEquipDef[2];
 							global.playerArmor[0] = nextEquipDef[0];
 							global.playerArmor[1]++;
+							
+							if EquipmentHasNext(global.allArmor, global.playerArmor) {
+								nextEquipDef = EquipmentGetNextDef(global.allArmor, global.playerArmor);
+								ds_list_add(toWrite, EquipmentCost(nextEquipDef, "armor"));
+							} else {
+								ds_list_add(toWrite, "Blacksmith: \"You have bought all the armor I have, my friend.\"");
+							}
 						} else {
 							ds_list_add(toWrite, "Blacksmith: \"You cannot afford that! It costs " +
 								string(nextEquipDef[1]) + " gold.\"");
-						}
-						
-						if EquipmentHasNext(global.allArmor, global.playerArmor) {
-							nextEquipDef = EquipmentGetNextDef(global.allArmor, global.playerArmor);
-							ds_list_add(toWrite, EquipmentCost(nextEquipDef, "armor"));
-						} else {
-							ds_list_add(toWrite, "Blacksmith: \"You have bought all the armor I have, my friend.\"");
 						}
 					} else {
 						ds_list_add(toWrite, "Blacksmith: \"I have no more armor for you my friend.\"");
@@ -166,16 +166,16 @@ switch (baseCommand) {
 							global.playerAttack += nextEquipDef[2];
 							global.playerWeapon[0] = nextEquipDef[0];
 							global.playerWeapon[1]++;
+							
+							if EquipmentHasNext(global.allWeapons, global.playerWeapon) {
+								nextEquipDef = EquipmentGetNextDef(global.allWeapons, global.playerWeapon);
+								ds_list_add(toWrite, EquipmentCost(nextEquipDef, "weapon"));
+							} else {
+								ds_list_add(toWrite, "Blacksmith: \"You have bought all the weapons I have, my friend.\"");
+							}
 						} else {
 							ds_list_add(toWrite, "Blacksmith: \"You cannot afford that! It costs " +
 								string(nextEquipDef[1]) + " gold.\"");
-						}
-						
-						if EquipmentHasNext(global.allWeapons, global.playerWeapon) {
-							nextEquipDef = EquipmentGetNextDef(global.allWeapons, global.playerWeapon);
-							ds_list_add(toWrite, EquipmentCost(nextEquipDef, "weapon"));
-						} else {
-							ds_list_add(toWrite, "Blacksmith: \"You have bought all the weapons I have, my friend.\"");
 						}
 					} else {
 						ds_list_add(toWrite, "Blacksmith: \"I have no more weapons for you my friend.\"");
@@ -191,16 +191,16 @@ switch (baseCommand) {
 							global.playerDefense += nextEquipDef[2];
 							global.playerShield[0] = nextEquipDef[0];
 							global.playerShield[1]++;
+							
+							if EquipmentHasNext(global.allShields, global.playerShield) {
+								nextEquipDef = EquipmentGetNextDef(global.allShields, global.playerShield);
+								ds_list_add(toWrite, EquipmentCost(nextEquipDef, "shield"));
+							} else {
+								ds_list_add(toWrite, "Blacksmith: \"You have bought all the shields I have, my friend.\"");
+							}
 						} else {
 							ds_list_add(toWrite, "Blacksmith: \"You cannot afford that! It costs " +
 								string(nextEquipDef[1]) + " gold.\"");
-						}
-						
-						if EquipmentHasNext(global.allShields, global.playerShield) {
-							nextEquipDef = EquipmentGetNextDef(global.allShields, global.playerShield);
-							ds_list_add(toWrite, EquipmentCost(nextEquipDef, "shield"));
-						} else {
-							ds_list_add(toWrite, "Blacksmith: \"You have bought all the shields I have, my friend.\"");
 						}
 					} else {
 						ds_list_add(toWrite, "Blacksmith: \"I have no more shields for you my friend.\"");
@@ -216,16 +216,16 @@ switch (baseCommand) {
 							global.playerDefense += nextEquipDef[2];
 							global.playerPants[0] = nextEquipDef[0];
 							global.playerPants[1]++;
+							
+							if EquipmentHasNext(global.allPants, global.playerPants) {
+								nextEquipDef = EquipmentGetNextDef(global.allPants, global.playerPants);
+								ds_list_add(toWrite, EquipmentCost(nextEquipDef, "pants"));
+							} else {
+								ds_list_add(toWrite, "Blacksmith: \"You have bought all the pants I have, my friend.\"");
+							}
 						} else {
 							ds_list_add(toWrite, "Blacksmith: \"You cannot afford that! It costs " +
 								string(nextEquipDef[1]) + " gold.\"");
-						}
-						
-						if EquipmentHasNext(global.allPants, global.playerPants) {
-							nextEquipDef = EquipmentGetNextDef(global.allPants, global.playerPants);
-							ds_list_add(toWrite, EquipmentCost(nextEquipDef, "pants"));
-						} else {
-							ds_list_add(toWrite, "Blacksmith: \"You have bought all the pants I have, my friend.\"");
 						}
 					} else {
 						ds_list_add(toWrite, "Blacksmith: \"I have no more pants for you my friend.\"");
@@ -241,16 +241,16 @@ switch (baseCommand) {
 							global.playerDefense += nextEquipDef[2];
 							global.playerBoots[0] = nextEquipDef[0];
 							global.playerBoots[1]++;
+							
+							if EquipmentHasNext(global.allBoots, global.playerBoots) {
+								nextEquipDef = EquipmentGetNextDef(global.allBoots, global.playerBoots);
+								ds_list_add(toWrite, EquipmentCost(nextEquipDef, "boots"));
+							} else {
+								ds_list_add(toWrite, "Blacksmith: \"You have bought all the boots I have, my friend.\"");
+							}
 						} else {
 							ds_list_add(toWrite, "Blacksmith: \"You cannot afford that! It costs " +
 								string(nextEquipDef[1]) + " gold.\"");
-						}
-						
-						if EquipmentHasNext(global.allBoots, global.playerBoots) {
-							nextEquipDef = EquipmentGetNextDef(global.allBoots, global.playerBoots);
-							ds_list_add(toWrite, EquipmentCost(nextEquipDef, "boots"));
-						} else {
-							ds_list_add(toWrite, "Blacksmith: \"You have bought all the boots I have, my friend.\"");
 						}
 					} else {
 						ds_list_add(toWrite, "Blacksmith: \"I have no more boots for you my friend.\"");

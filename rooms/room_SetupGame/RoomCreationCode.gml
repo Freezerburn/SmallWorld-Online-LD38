@@ -20,7 +20,7 @@ global.playerHealth = 100;
 global.playerMaxHealth = 100;
 global.playerAttack = 10;
 global.playerDefense = 2;
-global.playerGold = 5000;
+global.playerGold = 150;
 
 global.playerHelmet = ["None", 0];
 global.playerArmor = ["Rags", 1];
