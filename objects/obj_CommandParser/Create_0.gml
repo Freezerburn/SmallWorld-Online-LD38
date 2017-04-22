@@ -11,3 +11,10 @@ with (inputController) {
 	event_user(0);
 }
 ds_list_clear(toWrite);
+
+CreateButton(4, inputController.bottom + sprite_get_height(spr_Logout) + 5,
+	spr_Logout, "Instances",
+	self, 1);
+playerUIData = instance_create_layer(
+	4, inputController.bottom + sprite_get_height(spr_Logout) * 2 + 5 * 2,
+	"NormalUI", obj_CharacterData);

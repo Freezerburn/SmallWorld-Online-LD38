@@ -38,3 +38,4 @@ minTimeBetweenKey = round(game_get_speed(gamespeed_fps) * 0.03);
 canKey = true;
 
 parser = -1;
+bottom = userInputY;
