@@ -114,7 +114,7 @@ switch (baseCommand) {
 				case "helmet":
 					if EquipmentHasNext(global.allHelmets, global.playerHelmet) {
 						var nextHelmetDef = EquipmentGetNextDef(global.allHelmets, global.playerHelmet);
-						if nextHelmetDef[1] < global.playerGold {
+						if nextHelmetDef[1] <= global.playerGold {
 							ds_list_add(toWrite, "You purchase the " + nextHelmetDef[0]);
 							global.playerGold -= nextHelmetDef[1];
 							global.playerDefense += nextHelmetDef[2];
@@ -139,7 +139,7 @@ switch (baseCommand) {
 				case "armor":
 					if EquipmentHasNext(global.allArmor, global.playerArmor) {
 						var nextEquipDef = EquipmentGetNextDef(global.allArmor, global.playerArmor);
-						if nextEquipDef[1] < global.playerGold {
+						if nextEquipDef[1] <= global.playerGold {
 							ds_list_add(toWrite, "You purchase the " + nextEquipDef[0]);
 							global.playerGold -= nextEquipDef[1];
 							global.playerDefense += nextEquipDef[2];
@@ -164,7 +164,7 @@ switch (baseCommand) {
 				case "weapon":
 					if EquipmentHasNext(global.allWeapons, global.playerWeapon) {
 						var nextEquipDef = EquipmentGetNextDef(global.allWeapons, global.playerWeapon);
-						if nextEquipDef[1] < global.playerGold {
+						if nextEquipDef[1] <= global.playerGold {
 							ds_list_add(toWrite, "You purchase the " + nextEquipDef[0]);
 							global.playerGold -= nextEquipDef[1];
 							global.playerAttack += nextEquipDef[2];
@@ -189,7 +189,7 @@ switch (baseCommand) {
 				case "shield":
 					if EquipmentHasNext(global.allShields, global.playerShield) {
 						var nextEquipDef = EquipmentGetNextDef(global.allShields, global.playerShield);
-						if nextEquipDef[1] < global.playerGold {
+						if nextEquipDef[1] <= global.playerGold {
 							ds_list_add(toWrite, "You purchase the " + nextEquipDef[0]);
 							global.playerGold -= nextEquipDef[1];
 							global.playerDefense += nextEquipDef[2];
@@ -214,7 +214,7 @@ switch (baseCommand) {
 				case "pants":
 					if EquipmentHasNext(global.allPants, global.playerPants) {
 						var nextEquipDef = EquipmentGetNextDef(global.allPants, global.playerPants);
-						if nextEquipDef[1] < global.playerGold {
+						if nextEquipDef[1] <= global.playerGold {
 							ds_list_add(toWrite, "You purchase the " + nextEquipDef[0]);
 							global.playerGold -= nextEquipDef[1];
 							global.playerDefense += nextEquipDef[2];
@@ -239,7 +239,7 @@ switch (baseCommand) {
 				case "boots":
 					if EquipmentHasNext(global.allBoots, global.playerBoots) {
 						var nextEquipDef = EquipmentGetNextDef(global.allBoots, global.playerBoots);
-						if nextEquipDef[1] < global.playerGold {
+						if nextEquipDef[1] <= global.playerGold {
 							ds_list_add(toWrite, "You purchase the " + nextEquipDef[0]);
 							global.playerGold -= nextEquipDef[1];
 							global.playerDefense += nextEquipDef[2];
