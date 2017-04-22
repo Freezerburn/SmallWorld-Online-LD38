@@ -3,7 +3,6 @@
 var baseCommand = ds_list_find_value(command, 0);
 switch (baseCommand) {
 	case "quit":
-	case "exit":
 	case "q":
 		game_end();
 		break;
@@ -15,8 +14,13 @@ switch (baseCommand) {
 			GoDirection(ds_list_find_value(command, 1), toWrite);
 		} else {
 			ds_list_add(toWrite, "You must specify a direction to go.");
+			GetRoomDirections(toWrite);
 		}
 		break
+		
+	case "exits":
+		GetRoomDirections(toWrite);
+		break;
 		
 	// Specific shortcuts for going a direction.
 	case "e":
@@ -279,6 +283,7 @@ switch (baseCommand) {
 	case "fight":
 		if global.currentRoom.name == "Dungeon" {
 			ds_list_add(toWrite, "You fight some monsters and gain experience.");
+			global.currentTimeCost += global.dungeonTimeCost;
 		} else {
 			ds_list_add(toWrite, "You cannot fight anybody here.");
 		}

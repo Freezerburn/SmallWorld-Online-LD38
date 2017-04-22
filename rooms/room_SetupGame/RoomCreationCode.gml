@@ -8,6 +8,26 @@ global.positives = 0;
 global.currentTimeCost = 0;
 
 global.timeCostBeforePenalty = 100;
+global.timeCostBeforeWarning = 70;
+global.warningShown = false;
+
+// TODO: Figure out how to express all the warnings and whatnot.
+// Needs:
+// - Multiple "pools" of things. So as the penalty count gets higher, the
+//   severity of them goes up.
+// - A way to track what the last warning was, so that we can display the
+//   appropriate penalty if they get to it, or the appropriate positive.
+// - A way to handle multiple "types" of "announcements". A warning might be
+//   an outlook calendar reminder, for example, but not all of them are going to
+//   be the same? (theoretically, at least) So we need to be able to define a thing
+//   that will handle the announcement. Though I can just include the index of an
+//   object to pass to instance creation, so that's actually pretty easy.
+// - Remove announcements that have been used up. We don't want to display the
+//   same thing twice.
+global.warningDefs = ds_list_create();
+global.penaltyDefs = ds_list_create();
+global.positiveDefs = ds_list_create();
+
 global.moveTimeCost = 1;
 global.blacksmithCostTimeCost = 1;
 global.talkTimeCost = 2;

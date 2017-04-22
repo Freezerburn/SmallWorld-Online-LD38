@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "18629dbe-73ec-4260-aa36-707eda8b28c3",
+            "Value": {
+                "id": "a167937d-a60c-4952-8a79-f3ab0f99efdf",
+                "resourcePath": "views\\18629dbe-73ec-4260-aa36-707eda8b28c3.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "1947210d-18fa-4953-ad06-7509b33ff171",
             "Value": {
                 "id": "ba911408-3406-4d87-b5bc-2ae6ebfb746e",
@@ -116,6 +124,14 @@
                 "id": "462df86c-d818-4416-9cdd-348b4b2cc6fe",
                 "resourcePath": "fonts\\fnt_LoadingSmallWorld\\fnt_LoadingSmallWorld.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "2aabde07-a8d9-45c5-a05d-1c8ced93eaee",
+            "Value": {
+                "id": "c199788a-2cd9-4c3d-8a98-5687d4cddabb",
+                "resourcePath": "views\\2aabde07-a8d9-45c5-a05d-1c8ced93eaee.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -239,6 +255,14 @@
             }
         },
         {
+            "Key": "6e745fce-5903-4c44-80cd-de98ab2d8f79",
+            "Value": {
+                "id": "fa727eed-fd95-4bf8-b3f0-bd81337a4cb1",
+                "resourcePath": "sprites\\spr_L1_DateNightGirlfriend\\spr_L1_DateNightGirlfriend.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "725d60b3-79bd-4b92-b65e-ddd2a9d32cb4",
             "Value": {
                 "id": "e56b2fb0-fade-46e1-8b96-eac177d2c4aa",
@@ -275,6 +299,14 @@
             "Value": {
                 "id": "523f1321-1618-4cf4-8d79-e70f8fb40b47",
                 "resourcePath": "objects\\obj_UserInputController\\obj_UserInputController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "79baa007-3db9-46cd-8b52-94457d3e2aee",
+            "Value": {
+                "id": "2911a1d6-f2f0-4514-8579-eaf329eeab38",
+                "resourcePath": "objects\\obj_WarningOutlook\\obj_WarningOutlook.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -367,6 +399,22 @@
             }
         },
         {
+            "Key": "9914fe37-5ef7-4699-8612-11a2479747be",
+            "Value": {
+                "id": "34823b27-e94c-4f01-ba07-208383023b15",
+                "resourcePath": "objects\\obj_PenaltyController\\obj_PenaltyController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "99b8bb4b-cc1e-4a40-bde1-7287104b63d4",
+            "Value": {
+                "id": "a42de070-a49b-480f-af74-58422e388fd9",
+                "resourcePath": "scripts\\GetRoomDirections\\GetRoomDirections.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9a4d2594-578c-4730-856f-cd410578f178",
             "Value": {
                 "id": "cd68248c-7cf1-4fff-ac0f-028ad2c4d892",
@@ -396,6 +444,14 @@
                 "id": "9d1083e4-5727-427c-8e65-fd4fb00e5d76",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "aa176735-f878-495d-9239-2b75129f3992",
+            "Value": {
+                "id": "b4b4d95d-e471-451a-ad0e-eb18000cc190",
+                "resourcePath": "views\\aa176735-f878-495d-9239-2b75129f3992.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -535,6 +591,14 @@
             }
         },
         {
+            "Key": "e65e17c6-0f09-4612-a157-bb24856c17cd",
+            "Value": {
+                "id": "b0c25c45-89bc-466c-a3c6-67d569d084bd",
+                "resourcePath": "views\\e65e17c6-0f09-4612-a157-bb24856c17cd.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "eadaf161-1036-4092-b431-bef2752e3a4a",
             "Value": {
                 "id": "ed06613f-2097-4c0e-9425-a38e2a1300c6",
@@ -617,6 +681,7 @@
         "9a4d2594-578c-4730-856f-cd410578f178",
         "fb6d3ccb-36e0-4ab0-9f4c-fef8fa189807",
         "dbcda213-01ff-4e68-96ed-3eae177ac883",
+        "99b8bb4b-cc1e-4a40-bde1-7287104b63d4",
         "a0831359-0853-4f4c-a7be-9d51b66e3e58",
         "f133bee5-a43a-434e-9b81-f211437f4249",
         "178a6b90-fbcb-4844-a794-27f3d3e94859",

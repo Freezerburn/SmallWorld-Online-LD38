@@ -17,5 +17,6 @@ if is_undefined(maybeOtherRoom) {
 global.currentRoom = maybeOtherRoom;
 ds_list_add(output, "You go " + ReadableDirection(dir));
 GetRoomDescription(true, output);
+global.currentTimeCost += global.moveTimeCost;
 
 return maybeOtherRoom;
