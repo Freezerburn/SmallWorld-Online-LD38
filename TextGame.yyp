@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "444bae63-d275-4943-b66a-3c3d98f07ce9",
+            "Value": {
+                "id": "0136db5a-d7df-4fc5-ae81-88fa14ef96c2",
+                "resourcePath": "objects\\obj_RoomTavern\\obj_RoomTavern.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "44ad0afa-1440-44b9-bdd4-2422532cc598",
             "Value": {
                 "id": "d2184362-3d2a-48d4-a5b4-15a6130fbbca",
@@ -412,6 +420,14 @@
                 "id": "5c06b5bc-b1d4-483b-bd10-d82d923a77ed",
                 "resourcePath": "sprites\\spr_TitleScreenStartButton\\spr_TitleScreenStartButton.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d7635e1d-522d-4852-9d22-b4f9c9ff6f15",
+            "Value": {
+                "id": "a4666901-ad8c-4681-820c-139f0cdc7204",
+                "resourcePath": "objects\\obj_RoomDungeon\\obj_RoomDungeon.yy",
+                "resourceType": "GMObject"
             }
         },
         {

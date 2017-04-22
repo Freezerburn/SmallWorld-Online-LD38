@@ -1,6 +1,6 @@
 /// @description
 
-name = "Town";
+name = "Blacksmith";
 description = "TODO: Blacksmith Description";
 shortDescription = "TODO: Short Blacksmith Description";
 
