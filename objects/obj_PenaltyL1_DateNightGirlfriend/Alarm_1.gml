@@ -1,6 +1,6 @@
 /// @description Move SMS off screen to the right
 
-show_debug_message("SWIPE OFF");
+//show_debug_message("SWIPE OFF");
 
 var swipeOffSms = childSms[| nextSwipeOffSms++];
 swipeOffSms.hspeed = 10;

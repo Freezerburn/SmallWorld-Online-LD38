@@ -322,7 +322,7 @@
             "Key": "79baa007-3db9-46cd-8b52-94457d3e2aee",
             "Value": {
                 "id": "2911a1d6-f2f0-4514-8579-eaf329eeab38",
-                "resourcePath": "objects\\obj_WarningOutlook\\obj_WarningOutlook.yy",
+                "resourcePath": "objects\\obj_OutlookAnnouncement\\obj_OutlookAnnouncement.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -530,7 +530,7 @@
             "Key": "c71e4739-e8a8-4312-869f-241a536f7e48",
             "Value": {
                 "id": "5c2134dc-8a81-4f09-8684-6ebaa0868414",
-                "resourcePath": "objects\\obj_PenaltySMS\\obj_PenaltySMS.yy",
+                "resourcePath": "objects\\obj_SMSAnnouncement\\obj_SMSAnnouncement.yy",
                 "resourceType": "GMObject"
             }
         },

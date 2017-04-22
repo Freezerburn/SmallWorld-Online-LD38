@@ -1,7 +1,7 @@
 /// @description
 
 if childSms[| ds_list_size(childSms) - 1] == -1 {
-	show_debug_message("DESTROY SMS");
+	//show_debug_message("DESTROY SMS");
 	instance_destroy(self);
 	exit;
 }
@@ -23,7 +23,7 @@ for (var i = 0; i <= ds_list_size(childSms); i++) {
 	
 	if sms != -1 {
 		if sms.x > room_width {
-			show_debug_message("DESTROY CHILD");
+			//show_debug_message("DESTROY CHILD");
 			instance_destroy(sms);
 			childSms[| i] = -1;
 		}

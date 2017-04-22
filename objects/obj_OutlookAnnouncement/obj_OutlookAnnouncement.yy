@@ -2,7 +2,7 @@
     "id": "79baa007-3db9-46cd-8b52-94457d3e2aee",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_WarningOutlook",
+    "name": "obj_OutlookAnnouncement",
     "eventList": [
         {
             "id": "7534030c-c71b-40c2-8c11-063e55009c19",

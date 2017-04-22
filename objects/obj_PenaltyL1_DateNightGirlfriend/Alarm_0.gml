@@ -1,13 +1,5 @@
 /// @description Move new SMS text in from the top
 
-//if currentVisibleSms == ds_list_size(childSms) {
-//	for (var i = 0; i < currentVisibleSms; i++) {
-//		instance_destroy(childSms[| i]);
-//	}
-//	instance_destroy(self);
-//	exit;
-//}
-
 currentVisibleSms++;
 if currentVisibleSms < ds_list_size(childSms) {
 	for (var i = 0; i < currentVisibleSms; i++) {

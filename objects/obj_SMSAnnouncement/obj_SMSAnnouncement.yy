@@ -2,7 +2,7 @@
     "id": "c71e4739-e8a8-4312-869f-241a536f7e48",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_PenaltySMS",
+    "name": "obj_SMSAnnouncement",
     "eventList": [
         
     ],
