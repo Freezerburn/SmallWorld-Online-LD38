@@ -57,6 +57,9 @@ global.dungeonTimeCost = 10;
 global.dailyQuestTimeCost = 5;
 global.eventTimeCost = 15;
 
+global.playerLevel = 1;
+global.playerExperience = 0;
+global.playerNextLevelExperience = 100;
 global.playerHealth = 100;
 global.playerMaxHealth = 100;
 global.playerAttack = 10;
@@ -104,6 +107,13 @@ global.allPants = [
 global.allBoots = [
 	["None", 0, 0],
 	["Worn Out Sandals", 150, 1]
+];
+
+global.experienceAmounts = [
+	200, 400, 800, 1000,
+	1500, 2000, 3000,
+	4500, 7000, 10000,
+	20000, 40000
 ];
 
 room_goto_next();

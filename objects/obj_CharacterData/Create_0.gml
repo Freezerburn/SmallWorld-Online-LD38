@@ -1,9 +1,15 @@
 /// @description
 
-playerHealthIcon = instance_create_layer(x, y, layer, obj_SimpleUISprite);
+playerLVIcon = instance_create_layer(x, y, layer, obj_SimpleUISprite);
+playerLVIcon.sprite_index = spr_LV;
+
+playerXPIcon = instance_create_layer(x, playerLVIcon.y + playerLVIcon.sprite_height + 4, layer, obj_SimpleUISprite);
+playerXPIcon.sprite_index = spr_XP;
+
+playerHealthIcon = instance_create_layer(x, playerXPIcon.y + playerXPIcon.sprite_height + 4, layer, obj_SimpleUISprite);
 playerHealthIcon.sprite_index = spr_Heart;
 
-playerAttackIcon = instance_create_layer(x, y + playerHealthIcon.sprite_height + 4,
+playerAttackIcon = instance_create_layer(x, playerHealthIcon.y + playerHealthIcon.sprite_height + 4,
 	layer, obj_SimpleUISprite);
 playerAttackIcon.sprite_index = spr_Sword;
 

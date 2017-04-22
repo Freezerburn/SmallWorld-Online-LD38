@@ -3,7 +3,11 @@
 draw_set_font(fnt_UserInput);
 draw_set_color(c_white);
 
-draw_text(x + playerHealthIcon.sprite_width + 4, y,
+draw_text(x + playerLVIcon.sprite_width + 4, y,
+	string(global.playerLevel));
+draw_text(x + playerXPIcon.sprite_width + 4, playerXPIcon.y,
+	string(global.playerExperience) + "/" + string(global.playerNextLevelExperience));
+draw_text(x + playerHealthIcon.sprite_width + 4, playerHealthIcon.y,
 	string(global.playerHealth) + "/" + string(global.playerMaxHealth));
 draw_text(x + playerAttackIcon.sprite_width + 4, playerAttackIcon.y,
 	string(global.playerAttack));
