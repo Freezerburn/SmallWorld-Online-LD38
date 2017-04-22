@@ -13,6 +13,9 @@ draw_clear_alpha(c_black, 0);
 // Draw all lines of text to the "console".
 draw_set_font(fnt_ConsoleOutput);
 draw_set_color(c_white);
+if userAtBottomOfConsole {
+	textOffset = -(totalTextHeight - surfaceHeight);
+}
 var currentHeight = textOffset;
 for (var i = 0; i < ds_list_size(drawLines); i++) {
 	var line = ds_list_find_value(drawLines, i);
@@ -41,7 +44,12 @@ if totalTextHeight > surfaceHeight {
 // Draw the scrollbar if there's enough text to warrant showing one.
 if scrollbarExists {
 	var nonVisibleHeight = totalTextHeight - surfaceHeight;
-	scrollbarY = (-textOffset / nonVisibleHeight) * (surfaceHeight - scrollbarHeight);
+	if userAtBottomOfConsole {
+		scrollbarY = surfaceHeight - scrollbarHeight;
+	} else {
+		scrollbarY = (-textOffset / nonVisibleHeight) * (surfaceHeight - scrollbarHeight);
+	}
+	
 	draw_rectangle_color(
 		surfaceWidth - scrollbarWidth, scrollbarY,
 		surfaceWidth, scrollbarY + scrollbarHeight,

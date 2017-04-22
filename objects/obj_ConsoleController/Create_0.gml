@@ -4,6 +4,7 @@ writeLines = ds_list_create();
 drawLines = ds_list_create();
 textOffset = 0;
 totalTextHeight = 0;
+userAtBottomOfConsole = true;
 
 textSurface = -1;
 surfaceHeight = 512;

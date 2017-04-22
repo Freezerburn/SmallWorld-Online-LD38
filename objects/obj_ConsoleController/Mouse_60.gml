@@ -1,6 +1,7 @@
 /// @description Scroll console up
 
 if scrollbarExists {
+	userAtBottomOfConsole = false;
 	textOffset += scrollSpeed;
 	
 	if textOffset > 0 {

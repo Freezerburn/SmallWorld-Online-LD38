@@ -7,6 +7,7 @@ if scrollbarExists {
 	textOffset -= scrollSpeed;
 
 	if totalTextHeight + textOffset < surfaceHeight {
+		userAtBottomOfConsole = true;
 		textOffset = -(totalTextHeight - surfaceHeight);
 		scrollbarY = surfaceHeight - scrollbarHeight;
 	}
