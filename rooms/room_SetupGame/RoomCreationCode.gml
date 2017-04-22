@@ -24,9 +24,25 @@ global.warningShown = false;
 //   object to pass to instance creation, so that's actually pretty easy.
 // - Remove announcements that have been used up. We don't want to display the
 //   same thing twice.
+// Three pools of things: mild, bad, severe
+// Only one pool of positive things? Or should how bad you're into the game reflect
+// what happens for positive things?
 global.warningDefs = ds_list_create();
+ds_list_add(global.warningDefs, ds_list_create()); // mild pool
+ds_list_add(global.warningDefs[| 0],
+	[obj_WarningL1_DateNightGirlfriend]);
+ds_list_add(global.warningDefs, ds_list_create()); // bad pool
+ds_list_add(global.warningDefs, ds_list_create()); // severe pool
+
 global.penaltyDefs = ds_list_create();
+ds_list_add(global.penaltyDefs, ds_list_create()); // mild pool
+ds_list_add(global.penaltyDefs, ds_list_create()); // bad pool
+ds_list_add(global.penaltyDefs, ds_list_create()); // severe pool
+
 global.positiveDefs = ds_list_create();
+ds_list_add(global.positiveDefs, ds_list_create()); // mild pool
+ds_list_add(global.positiveDefs, ds_list_create()); // bad pool
+ds_list_add(global.positiveDefs, ds_list_create()); // severe po
 
 global.moveTimeCost = 1;
 global.blacksmithCostTimeCost = 1;

@@ -599,6 +599,14 @@
             }
         },
         {
+            "Key": "e69bd69e-b0d8-45e1-92bd-e138aa31061f",
+            "Value": {
+                "id": "9384b183-a22a-4b40-9d28-ca2579a91fd2",
+                "resourcePath": "objects\\obj_WarningL1_DateNightGirlfriend\\obj_WarningL1_DateNightGirlfriend.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "eadaf161-1036-4092-b431-bef2752e3a4a",
             "Value": {
                 "id": "ed06613f-2097-4c0e-9425-a38e2a1300c6",

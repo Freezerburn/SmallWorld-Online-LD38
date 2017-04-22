@@ -8,8 +8,9 @@ if global.currentTimeCost > global.timeCostBeforePenalty {
 	//show_debug_message("WARNING");
 	global.warningShown = true;
 	
-	var warning = instance_create_layer(9999999, 99999999, "NormalUI", obj_WarningOutlook);
-	warning.sprite_index = spr_L1_DateNightGirlfriend;
-	warning.x = room_width - warning.sprite_width - 15;
-	warning.y = room_height + 4;
+	var pool = global.warningDefs[| 0];
+	var eventIdx = floor(random_range(0, ds_list_size(pool)));
+	var eventData = pool[| eventIdx];
+	var objIdx = eventData[0];
+	var warning = instance_create_layer(9999999, 99999999, "NormalUI", objIdx);
 }
