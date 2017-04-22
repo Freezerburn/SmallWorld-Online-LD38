@@ -1,7 +1,6 @@
 /// @description Insert, input char
 
 if keyboard_lastkey == vk_return {
-	// TODO: Parse text.
 	for (var i = 0; i < ds_list_size(charObjectsArray); i++) {
 		var instance = ds_list_find_value(charObjectsArray, i);
 		textToHandle += instance.drawChar;
@@ -17,11 +16,16 @@ if keyboard_lastkey == vk_return {
 }
 
 if keyboard_lastkey != -1 && keyboard_lastkey != vk_backspace {
+	var nextHorzLoc = currentHorzLoc + string_width(keyboard_lastchar) + fontHorzBuffer;
+	if nextHorzLoc > console.surfaceWidth {
+		exit;
+	}
+
 	var newInstance = instance_create_layer(currentHorzLoc, userInputY, textLayer, obj_TextCharacter);
 	newInstance.drawChar = keyboard_lastchar;
 	ds_list_add(charObjectsArray, newInstance);
 
-	currentHorzLoc += string_width(keyboard_lastchar) + fontHorzBuffer;
+	currentHorzLoc = nextHorzLoc;
 	UpdateCursorPos(cursor, currentHorzLoc);
 	
 	audio_play_sound(snd_KeyClick2, 10, false);
