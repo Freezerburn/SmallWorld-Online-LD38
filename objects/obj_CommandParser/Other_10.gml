@@ -313,8 +313,8 @@ switch (baseCommand) {
 					var currentMonsterHP = monsterData[global.MONSTER_HP];
 					var monsterName = monsterData[global.MONSTER_NAME];
 					while global.playerHealth > 0 && currentMonsterHP > 0 {
-						var playerDamageDone = damageToBase + round(
-							random_range(-global.playerDamageRandom, global.playerDamageRandom)
+						var playerDamageDone = damageToBase + ceil(
+							random_range(-global.playerDamageRandom * 0.25, global.playerDamageRandom)
 						);
 						
 						if playerDamageDone <= 0 {
@@ -329,7 +329,7 @@ switch (baseCommand) {
 						}
 						
 						var monsterDamageDone = damageFromBase + round(
-							random_range(-monsterData[global.MONSTER_RANDOM], monsterData[global.MONSTER_RANDOM])
+							random_range(-monsterData[global.MONSTER_RANDOM] * 0.1, monsterData[global.MONSTER_RANDOM])
 						);
 						if monsterDamageDone <= 0 {
 							ds_list_add(toWrite, "The " + monsterName + " does its best, but it doesn't manage to " +

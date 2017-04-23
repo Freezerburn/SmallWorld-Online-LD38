@@ -149,21 +149,28 @@ global.MONSTER_GOLD_RANDOM = 8;
 global.allMonsters = [
 	// easy monsters
 	[
-		["Slime", 10, 3, 1, 1, 2, 2, 5, 2],
-		["Goblin", 15, 4, 2, 2, 5, 3, 10, 5]
+		["Slime",        10, 3, 1, 1, 2, 2, 8, 2],
+		["Goblin",       15, 4, 2, 2, 5, 3, 12, 5],
+		["Imp",          8,  5, 1, 5, 5, 5, 12, 5],
+		["Noodle Demon", 12, 4, 2, 3, 4, 5, 14, 6],
+		["Nasal Demon",  12, 4, 1, 2, 6, 2, 15, 4]
 	],
 	
 	// medium monsters
 	[
-		["Orc", 100, 20, 8, 10, 30, 15, 50, 20]
+		["Orc",        100, 20, 8,  10, 30, 15, 50, 20],
+		["Fire Demon", 110, 30, 10, 5,  50, 20, 70, 30]
 	],
 	
 	// hard monsters
 	[
+		["Fire Dragon", 500, 100, 50, 40, 200, 100, 300, 100]
 	],
 	
 	// extreme monsters
 	[
+		["Incepticus, the Ever-Diving",
+			5000, 5000, 300, 10000, 5000, 20000, 10000]
 	]
 ];
 
