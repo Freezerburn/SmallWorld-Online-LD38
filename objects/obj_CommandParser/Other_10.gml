@@ -414,37 +414,19 @@ switch (baseCommand) {
 							global.playerLevel++;
 						}
 					} else {
-						var xpLost = ceil(global.playerTotalExperience * 0.1);
+						var decayData = DecayExperience(0.1);
+						var xpLost = decayData[0];
+						var levelsLost = decayData[1];
 						ds_list_add(toWrite, "You died! You lose " + string(xpLost) + " experience and resurrect outside of the dungeon.");
-						global.playerTotalExperience -= xpLost;
-						global.playerExperience -= xpLost;
 						global.playerHealth = global.playerMaxHealth;
-						
-						if global.playerExperience < 0 {
-							if global.playerLevel == 1 {
-								global.playerExperience = 0;
-							} else {
-								ds_list_add(toWrite, "You lost a level!");
-							
-								global.playerLevel--;
-							
-								var bonuses = global.levelBonuses[global.playerLevel - 1];
-								ds_list_add(toWrite, "You lost " + string(bonuses[0]) + " HP.");
-								ds_list_add(toWrite, "You lost " + string(bonuses[1]) + " attack.");
-								ds_list_add(toWrite, "You lost " + string(bonuses[2]) + " defense.");
-								global.playerMaxHealth -= bonuses[0];
-								global.playerHealth = global.playerMaxHealth;
-								global.playerAttack -= bonuses[1];
-								global.playerDefense -= bonuses[2];
-							
-								global.playerNextLevelExperience = global.experienceAmounts[global.playerLevel - 1];
-								global.playerExperience = global.playerNextLevelExperience + global.playerExperience;
-								// Can only lose 1 level at a time. Losing more than one at a time is more than
-								// I want to code right now.
-								if global.playerExperience < 0 {
-									global.playerExperience = 0;
-								}
-							}
+						if levelsLost > 0 {
+							ds_list_add(toWrite, "You lost a level!");
+							var hpLost = decayData[2];
+							var attackLost = decayData[3];
+							var defenseLost = decayData[4];
+							ds_list_add(toWrite, "You lost " + string(hpLost) + " HP.");
+							ds_list_add(toWrite, "You lost " + string(attackLost) + " attack.");
+							ds_list_add(toWrite, "You lost " + string(defenseLost) + " defense.");
 						}
 					}
 					

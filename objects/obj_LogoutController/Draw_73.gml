@@ -13,6 +13,7 @@ draw_set_alpha(currentAlpha);
 draw_rectangle(0, 0, room_width, room_height, false);
 
 if drawDayOutline {
+	draw_set_font(fnt_LoadingSmallWorld);
 	draw_set_color(c_white);
 	draw_set_alpha(textAlpha);
 	
@@ -23,11 +24,15 @@ if drawDayOutline {
 	if textAlpha > 1 {
 		textAlpha = 1;
 		if alarm[1] == -1 && !finishLogout {
-			alarm[1] = room_speed * 2;
+			alarm[1] = timeBeforeFadeOut;
 		}
 	}
 	
-	draw_text(100, 100, "test outline");
+	draw_text_ext(room_width / 2 - mainTextWidth / 2, 100, mainTextToDraw,
+		-1, 700);
+	draw_text_ext(room_width / 2 - decayTextWidth / 2,
+		100 + mainTextHeight + 50,
+		decayText, -1, 700);
 }
 
 if finishLogout {

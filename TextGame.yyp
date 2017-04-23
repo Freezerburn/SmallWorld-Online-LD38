@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "6a47012c-84c6-4ca6-8e05-41588af81340",
+            "Value": {
+                "id": "40f5a55f-b0df-4a69-b85c-15371ad9c235",
+                "resourcePath": "scripts\\DecayExperience\\DecayExperience.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6e745fce-5903-4c44-80cd-de98ab2d8f79",
             "Value": {
                 "id": "fa727eed-fd95-4bf8-b3f0-bd81337a4cb1",
@@ -781,7 +789,8 @@
         "a0831359-0853-4f4c-a7be-9d51b66e3e58",
         "f133bee5-a43a-434e-9b81-f211437f4249",
         "178a6b90-fbcb-4844-a794-27f3d3e94859",
-        "fee1762c-41a6-4a3c-9fcb-dacaa360b6b8"
+        "fee1762c-41a6-4a3c-9fcb-dacaa360b6b8",
+        "6a47012c-84c6-4ca6-8e05-41588af81340"
     ],
     "tutorial": ""
 }

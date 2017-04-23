@@ -14,6 +14,7 @@ if global.currentTimeCost >= global.timeCostBeforePenalty {
 	var pool = global.penaltyDefs[| 0];
 	var eventData = pool[| global.lastWarningDef[1]];
 	var objIdx = eventData[0];
+	ds_list_add(global.penaltiesAccumulated, eventData);
 	var penalty = instance_create_layer(999999, 999999, "NormalUI", objIdx);
 	
 	global.lastWarningDef = -1;

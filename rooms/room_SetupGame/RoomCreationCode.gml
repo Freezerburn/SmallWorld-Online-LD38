@@ -13,6 +13,7 @@ global.prevTimeCost = 0;
 global.currentTimeCost = 0;
 
 global.accumulatedTimeCost = 0;
+global.penaltiesAccumulated = ds_list_create();
 // TODO: Determine if this should be higher.
 global.timeCostDeathCondition = 800;
 
