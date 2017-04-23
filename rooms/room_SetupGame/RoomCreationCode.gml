@@ -52,6 +52,10 @@ ds_list_add(global.warningDefs[| 0], [obj_WarningL1_Bedtime, -1]);
 ds_list_add(global.warningDefs[| 0], [-1, -2]);
 	
 ds_list_add(global.warningDefs, ds_list_create()); // bad pool
+ds_list_add(global.warningDefs[| 1], [-1, -2]);
+ds_list_add(global.warningDefs[| 1], [-1, -2]);
+ds_list_add(global.warningDefs[| 1], [obj_WarningL2_GirlfriendNotice, 0]);
+ds_list_add(global.warningDefs[| 1], [obj_WarningL2_ConcernedFriend, 1]);
 
 ds_list_add(global.warningDefs, ds_list_create()); // severe pool
 
@@ -71,8 +75,12 @@ ds_list_add(global.standalonePenalties, ds_list_create());
 ds_list_add(global.standalonePenalties[| 0], [obj_PenaltyL1_FriendGameNight]);
 
 ds_list_add(global.penaltyDefs, ds_map_create()); // bad pool
+ds_map_add(global.penaltyDefs[| 1], 0, [obj_PenaltyL2_GirlfriendNotice]);
+ds_map_add(global.penaltyDefs[| 1], 1, [obj_PenaltyL2_ConcernedFriend]);
 
 ds_list_add(global.standalonePenalties, ds_list_create());
+ds_list_add(global.standalonePenalties[| 1], [obj_PenaltyL2_DoctorHealth]);
+ds_list_add(global.standalonePenalties[| 1], [obj_PenaltyL2_BossAbsences]);
 
 ds_list_add(global.penaltyDefs, ds_map_create()); // severe pool
 

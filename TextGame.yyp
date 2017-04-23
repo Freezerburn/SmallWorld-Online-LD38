@@ -63,11 +63,27 @@
             }
         },
         {
+            "Key": "0a6650ff-616d-41d1-957a-ffd80844b1e3",
+            "Value": {
+                "id": "a243bad0-9b9b-4aa1-968d-9b01e2eb516e",
+                "resourcePath": "sprites\\spr_PenaltyL2_GirlfriendNotice\\spr_PenaltyL2_GirlfriendNotice.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0de50623-a787-4b1f-a507-c9fbc8f6d863",
             "Value": {
                 "id": "b77f1d15-dd7c-4f65-91b9-1721a94196ca",
                 "resourcePath": "views\\0de50623-a787-4b1f-a507-c9fbc8f6d863.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "0e17af44-0d36-40f1-8734-87cd7ac8d725",
+            "Value": {
+                "id": "c6a706ca-b542-479a-8444-9b147eb508a2",
+                "resourcePath": "objects\\obj_PenaltyL2_ConcernedFriend\\obj_PenaltyL2_ConcernedFriend.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -263,6 +279,22 @@
             }
         },
         {
+            "Key": "3a2986dc-dead-4699-9b64-98ac9c33d1a5",
+            "Value": {
+                "id": "cff7f530-98a4-42ad-800f-8bc71d5268ae",
+                "resourcePath": "objects\\obj_PenaltyL2_BossAbsences\\obj_PenaltyL2_BossAbsences.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3a63ea13-a670-40f0-80c2-3ec5a2b85d19",
+            "Value": {
+                "id": "16965fb0-c38a-4d51-a879-d87a36da10a6",
+                "resourcePath": "sprites\\spr_PenaltyL2_BossAbsences\\spr_PenaltyL2_BossAbsences.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3c1afc14-17c1-433b-9b2b-a742ab82a3f0",
             "Value": {
                 "id": "0aefcfa4-0e7a-4fd4-aa89-d007fc4da7e1",
@@ -391,6 +423,14 @@
             }
         },
         {
+            "Key": "5557e577-9693-481d-8505-988458d9dc87",
+            "Value": {
+                "id": "63309f27-f7d3-44ab-94f2-8940fa460ca0",
+                "resourcePath": "objects\\obj_PenaltyL2_DoctorHealth\\obj_PenaltyL2_DoctorHealth.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5762897a-29e6-4712-a43b-a6d4dc79f7e3",
             "Value": {
                 "id": "bf2e9b9e-ccd9-4d51-aa7a-217b47b74656",
@@ -503,6 +543,14 @@
             }
         },
         {
+            "Key": "720c7bae-3969-4f0c-bc70-2d88db13dd6d",
+            "Value": {
+                "id": "09a977a6-a6e8-4292-b268-d220ed1f8d07",
+                "resourcePath": "sprites\\spr_PenaltyL2_DoctorHealth\\spr_PenaltyL2_DoctorHealth.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "725d60b3-79bd-4b92-b65e-ddd2a9d32cb4",
             "Value": {
                 "id": "e56b2fb0-fade-46e1-8b96-eac177d2c4aa",
@@ -587,6 +635,14 @@
             "Value": {
                 "id": "3a00e3fa-bedf-4b1c-a201-a0784043696b",
                 "resourcePath": "sprites\\spr_PositiveL1_DateNightGirlfriend\\spr_PositiveL1_DateNightGirlfriend.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7edecc0d-d795-4095-80fe-a61326801b89",
+            "Value": {
+                "id": "a4bfb3a5-79e6-4efe-9b95-b2df55c5cdb8",
+                "resourcePath": "sprites\\spr_PositiveL2_ConcernedFriend\\spr_PositiveL2_ConcernedFriend.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -759,6 +815,14 @@
             }
         },
         {
+            "Key": "aaef9c97-af30-45af-b88c-81d1142e36c7",
+            "Value": {
+                "id": "54ac2ba8-1b40-4fe5-893b-b73634ccd0aa",
+                "resourcePath": "objects\\obj_PenaltyL2_GirlfriendNotice\\obj_PenaltyL2_GirlfriendNotice.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ae74d125-bc52-4f4a-84ab-d748919a0c1f",
             "Value": {
                 "id": "fd2e27b5-49f9-45ae-8543-4862c478f5b8",
@@ -772,6 +836,14 @@
                 "id": "bb15b95f-a6c6-47d5-92f2-0b0b661faf9a",
                 "resourcePath": "objects\\obj_Button\\obj_Button.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "af0bdc24-bb50-48ea-91eb-d7bbbb035f33",
+            "Value": {
+                "id": "7d2ebff9-c65c-4f98-8572-3539093e1fea",
+                "resourcePath": "sprites\\spr_WarningL2_GirlfriendNotice\\spr_WarningL2_GirlfriendNotice.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -844,6 +916,14 @@
                 "id": "ac9855f6-b7e8-44b7-a1f3-016e19002ceb",
                 "resourcePath": "views\\c1b23a3b-1ff9-466d-ad57-9e9183a9e11b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c3607217-0709-476d-a339-e75cf9b7915f",
+            "Value": {
+                "id": "292da5e2-4dcc-4ca2-bf9b-aca472053530",
+                "resourcePath": "sprites\\spr_PenaltyL2_ConcernedFriend\\spr_PenaltyL2_ConcernedFriend.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -959,6 +1039,14 @@
             }
         },
         {
+            "Key": "d4da169f-e1b0-4d83-8afa-8c27c41e8328",
+            "Value": {
+                "id": "298a1b20-6e84-4e44-9837-8ee122e573ff",
+                "resourcePath": "objects\\obj_WarningL2_ConcernedFriend\\obj_WarningL2_ConcernedFriend.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d5a1a8ac-ce6f-4adf-9c05-fce05ca4d930",
             "Value": {
                 "id": "5c06b5bc-b1d4-483b-bd10-d82d923a77ed",
@@ -972,6 +1060,14 @@
                 "id": "a4666901-ad8c-4681-820c-139f0cdc7204",
                 "resourcePath": "objects\\obj_RoomDungeon\\obj_RoomDungeon.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "db51fb7c-da20-4adf-a621-84b472d96431",
+            "Value": {
+                "id": "98adc349-c2fa-48d8-a2d8-d408c9c98277",
+                "resourcePath": "sprites\\spr_WarningL2_ConcernedFriend\\spr_WarningL2_ConcernedFriend.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1004,6 +1100,14 @@
                 "id": "4a5e5923-ad08-4b13-a47e-e85d43a5f140",
                 "resourcePath": "views\\de59f1ad-dcb5-48a5-ad07-d2f5e2ae570b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "debcb64b-2265-467e-8605-7d190794121e",
+            "Value": {
+                "id": "9b2757f6-9e7b-43f4-b969-5ca667ca3c7d",
+                "resourcePath": "objects\\obj_PositiveL2_ConcernedFriend\\obj_PositiveL2_ConcernedFriend.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1131,6 +1235,14 @@
             "Value": {
                 "id": "a75efca6-96f4-4bd1-97e4-8b42a6bce22c",
                 "resourcePath": "objects\\obj_WarningL1_MakeUpDinner\\obj_WarningL1_MakeUpDinner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f66eaf82-1d9e-48ed-8518-b48917c9c9bf",
+            "Value": {
+                "id": "77190cca-80dd-41a3-918b-19716bc69af3",
+                "resourcePath": "objects\\obj_WarningL2_GirlfriendNotice\\obj_WarningL2_GirlfriendNotice.yy",
                 "resourceType": "GMObject"
             }
         },

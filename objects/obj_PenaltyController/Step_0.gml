@@ -16,27 +16,29 @@ if global.currentTimeCost >= global.showPositiveAfter && global.nextPositiveDef 
 }
 
 if global.currentTimeCost >= global.timeCostBeforePenalty {
-	global.penalties++;
-	//if global.penalties > 4 {
-	//	global.announcementPool++;
-	//} else if global.penalties > 9 {
-	//	global.announcementPool++;
-	//} else if global.penalties > 14 {
-	//	global.announcementPool++;
-	//} else if global.penalties > 19 {
-	//	global.announcementPool++;
-	//} else if ds_list_size(global.penaltyDefs[| global.announcementPool]) == 0 {
-	//	// TODO: Implement game over room.
-	//	room_goto(room_GameOver);
-	//	exit;
-	//}
-	
 	var pool = -1;
 	if global.lastWarningDef[1] == -1 {
 		ds_list_add(global.penaltiesAccumulated, global.lastWarningDef);
 		global.lastWarningDef = -1;
 		global.warningShown = false;
 		global.currentTimeCost = 0;
+		
+		global.penalties++;
+		if global.penalties > 4 {
+			global.announcementPool++;
+		} else if global.penalties > 9 {
+			global.announcementPool++;
+		} else if global.penalties > 14 {
+			global.announcementPool++;
+		} else if global.penalties > 19 {
+			global.announcementPool++;	
+		} else if global.penalties > 19 &&
+				 ds_map_size(global.penaltyDefs[| global.announcementPool]) == 0 {
+			// TODO: Implement game over room.
+			room_goto(room_GameOver);
+			exit;
+		}
+		
 		exit;
 	} else if global.lastWarningDef[0] == -1 {
 		pool = global.standalonePenalties[| global.announcementPool];
@@ -74,6 +76,22 @@ if global.currentTimeCost >= global.timeCostBeforePenalty {
 	global.lastWarningDef = -1;
 	global.warningShown = false;
 	global.currentTimeCost = 0;
+	
+	global.penalties++;
+	if global.penalties > 4 {
+		global.announcementPool++;
+	} else if global.penalties > 9 {
+		global.announcementPool++;
+	} else if global.penalties > 14 {
+		global.announcementPool++;
+	} else if global.penalties > 19 {
+		global.announcementPool++;
+	} else if global.penalties > 19 &&
+			 ds_list_size(global.penaltyDefs[| global.announcementPool]) == 0 {
+		// TODO: Implement game over room.
+		room_goto(room_GameOver);
+		exit;
+	}
 	
 } else if global.currentTimeCost >= global.timeCostBeforeWarning && !global.warningShown {
 	//show_debug_message("WARNING");

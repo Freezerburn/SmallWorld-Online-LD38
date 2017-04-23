@@ -17,6 +17,11 @@ if global.accumulatedTimeCost > global.timeCostBeforePenalty {
 	// Worse decay for being controlled.
 	decayData = DecayExperience(0.2);
 	global.positives++;
+	
+	if global.positives > 10 || ds_list_size(global.warningDefs[| global.announcementPool]) == 0 {
+		room_goto(room_GameWin);
+		exit;
+	}
 }
 
 if global.accumulatedTimeCost > global.timeCostBeforePenalty * 2 {
@@ -62,6 +67,10 @@ case obj_WarningL1_MakeUpDinner:
 case obj_WarningL1_FamilyDinner:
 	global.showPositiveAfter = 15 + round(random_range(-5, 15));
 	global.nextPositiveDef = obj_PositiveL1_FamilyDinner;
+	break;
+case obj_WarningL2_ConcernedFriend:
+	global.showPositiveAfter = 15 + round(random_range(-5, 15));
+	global.nextPositiveDef = obj_PositiveL2_ConcernedFriend;
 	break;
 }
 
