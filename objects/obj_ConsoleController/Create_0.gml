@@ -18,7 +18,7 @@ horizontalBuffer = 2;
 
 scrollbarWidth = 15;
 scrollbarExists = false;
-scrollSpeed = 8;
+scrollSpeed = 20;
 scrollbarY = 0;
 scrollbarHeight = 30;
 

@@ -35,5 +35,5 @@ draw_text(256, y + (maxFontHeight + 4) * 5, "Boots: ");
 draw_text(itemTextX, y + (maxFontHeight + 4) * 5, global.playerBoots[0]);
 
 // Debug drawing
-draw_text(x, playerGoldIcon.y + playerGoldIcon.sprite_height + 10,
-	"Time Cost: " + string(global.currentTimeCost));
+//draw_text(x, playerGoldIcon.y + playerGoldIcon.sprite_height + 10,
+//	"Time Cost: " + string(global.currentTimeCost));

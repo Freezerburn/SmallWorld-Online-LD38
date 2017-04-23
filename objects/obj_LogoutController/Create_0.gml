@@ -26,7 +26,7 @@ if global.accumulatedTimeCost > global.timeCostBeforePenalty {
 	} else if global.accumulatedTimeCost == 0 &&
 			global.penalties == 0 &&
 			global.positives == 0 &&
-			global.lastWarningDef == 0 {
+			!is_array(global.lastWarningDef) {
 		room_goto(room_GameWinNoPlay);
 		exit;
 	}

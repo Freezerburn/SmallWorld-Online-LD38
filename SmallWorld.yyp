@@ -735,6 +735,14 @@
             }
         },
         {
+            "Key": "83c8bf68-2f1d-406d-8279-c890f21b8549",
+            "Value": {
+                "id": "37d5d09c-5593-4088-b780-cd9231741da3",
+                "resourcePath": "objects\\obj_PenaltyL3_Fired\\obj_PenaltyL3_Fired.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8594c8f0-b4d0-44d0-8605-33c5edb955bb",
             "Value": {
                 "id": "042aa343-4704-45ac-b679-d004bf261df3",
@@ -1095,6 +1103,14 @@
             }
         },
         {
+            "Key": "c9b19eca-1712-484b-acd7-e408814a98b1",
+            "Value": {
+                "id": "9bb3fa10-ae01-4b49-b961-0d099cedd14e",
+                "resourcePath": "sprites\\spr_PenaltyL3_Fired\\spr_PenaltyL3_Fired.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cc430ca5-b3d0-438b-b99f-99fe126e7949",
             "Value": {
                 "id": "7242c4a7-1bef-429e-b523-f673d5ced028",
@@ -1180,6 +1196,14 @@
                 "id": "5c06b5bc-b1d4-483b-bd10-d82d923a77ed",
                 "resourcePath": "sprites\\spr_TitleScreenStartButton\\spr_TitleScreenStartButton.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d740705b-7e9c-4af1-b79a-5b9b5a0ae371",
+            "Value": {
+                "id": "1c9e8009-c291-42f0-b7de-4e379462d6fb",
+                "resourcePath": "objects\\obj_GameOverMessage\\obj_GameOverMessage.yy",
+                "resourceType": "GMObject"
             }
         },
         {

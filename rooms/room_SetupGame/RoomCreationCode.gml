@@ -72,6 +72,7 @@ ds_list_add(global.warningDefs[| 2], [-1, -2]);
 ds_list_add(global.warningDefs[| 2], [-1, -2]);
 ds_list_add(global.warningDefs[| 2], [-1, -2]);
 ds_list_add(global.warningDefs[| 2], [-1, -2]);
+ds_list_add(global.warningDefs[| 2], [-1, -2]);
 
 global.tutorialPenalties = ds_list_create();
 ds_list_add(global.tutorialPenalties, obj_PenaltyL1_BossLate);
@@ -104,6 +105,7 @@ ds_list_add(global.standalonePenalties[| 2], [obj_PenaltyL3_BankOverdrawn]);
 ds_list_add(global.standalonePenalties[| 2], [obj_PenaltyL3_PayBills]);
 ds_list_add(global.standalonePenalties[| 2], [obj_PenaltyL3_DoctorSerious]);
 ds_list_add(global.standalonePenalties[| 2], [obj_PenaltyL3_GirlfriendBreakup]);
+ds_list_add(global.standalonePenalties[| 2], [obj_PenaltyL3_Fired]);
 
 global.nextPenaltyKeys = [
 	ds_map_size(global.penaltyDefs[| 0]),

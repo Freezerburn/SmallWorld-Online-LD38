@@ -448,8 +448,14 @@ switch (baseCommand) {
 		break;
 		
 	// TODO: Print help.
-	//case "help":
-	//	break;
+	case "help":
+		ds_list_add(toWrite, "List of commands available:");
+		ds_list_add(toWrite, "'go <direction>' to move between rooms");
+		ds_list_add(toWrite, "'buy/cost' at the Blacksmith to buy things or get cost of next thing");
+		ds_list_add(toWrite, "'fight' at the Dungeon to fight monters");
+		ds_list_add(toWrite, "'rest' at the Tavern to restore to full health");
+		ds_list_add(toWrite, "'logout' to log out for the day");
+		break;
 		
 	default:
 		// TODO: Pick from a list of funny responses.

@@ -8,7 +8,8 @@
         "41481682-ad0e-44d2-a460-8f99b459e8f8",
         "b1a3191b-74d9-47a0-915d-f6b535656e08",
         "ea0ded2e-2b7a-4b07-abe8-aed824e4bec9",
-        "b98dbf63-4abf-4aec-9325-fb8a08630305"
+        "b98dbf63-4abf-4aec-9325-fb8a08630305",
+        "c9b19eca-1712-484b-acd7-e408814a98b1"
     ],
     "filterType": "GMSprite",
     "folderName": "L3",

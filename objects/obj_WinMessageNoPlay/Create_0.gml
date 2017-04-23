@@ -4,7 +4,7 @@ deathText = "You Win!";
 deathDescription = "After logging in and fiddling around a bit, you don't see the appeal " +
 	" of the game and log out, uninstalling the game permanently.";
 	
-draw_set_font(fnt_LoadingSmallWorld);
+draw_set_font(fnt_LogoutSummary);
 deathTextWidth = string_width(deathText);
 deathTextX = room_width / 2 - deathTextWidth / 2;
 deathTextY = 100;

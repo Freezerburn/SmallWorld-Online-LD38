@@ -1,6 +1,6 @@
 /// @description
 
-draw_set_font(fnt_LoadingSmallWorld);
+draw_set_font(fnt_LogoutSummary);
 draw_set_color(c_white);
 
 draw_text(deathTextX, deathTextY, deathText);
