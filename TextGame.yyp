@@ -535,6 +535,14 @@
             }
         },
         {
+            "Key": "b91ecdac-cff7-415f-9b34-cff22811645b",
+            "Value": {
+                "id": "4af4a1e3-1cbc-4fec-a266-b5787112a44d",
+                "resourcePath": "objects\\obj_LogoutController\\obj_LogoutController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bec3e2a5-05cb-4769-9546-cfaa4d666ebd",
             "Value": {
                 "id": "310568b1-e430-4cf2-8daa-efc37035d201",

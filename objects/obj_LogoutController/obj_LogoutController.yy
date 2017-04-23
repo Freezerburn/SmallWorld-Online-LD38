@@ -1,38 +1,48 @@
 {
-    "id": "72907130-513f-44ef-97c5-630da97113f4",
+    "id": "b91ecdac-cff7-415f-9b34-cff22811645b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_CommandParser",
+    "name": "obj_LogoutController",
     "eventList": [
         {
-            "id": "d2228729-ec0c-449b-98bd-dcf16bc00c1b",
+            "id": "c5baee33-16a5-4d62-b5ff-107e6562d79f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 73,
+            "eventtype": 8,
+            "m_owner": "b91ecdac-cff7-415f-9b34-cff22811645b"
+        },
+        {
+            "id": "73c22a86-d598-459e-ab92-eb92884a3eb9",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "72907130-513f-44ef-97c5-630da97113f4"
+            "m_owner": "b91ecdac-cff7-415f-9b34-cff22811645b"
         },
         {
-            "id": "9a8976f4-db42-43ef-84eb-28c100a9a31d",
+            "id": "7de960b5-6675-4ee6-8592-0d7bf37905a0",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 10,
-            "eventtype": 7,
-            "m_owner": "72907130-513f-44ef-97c5-630da97113f4"
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "b91ecdac-cff7-415f-9b34-cff22811645b"
         },
         {
-            "id": "ab0be75a-b94c-48e1-9c38-b84a37356511",
+            "id": "c40bc3a4-2ddc-4328-857a-17f52d9c053b",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 11,
-            "eventtype": 7,
-            "m_owner": "72907130-513f-44ef-97c5-630da97113f4"
+            "enumb": 1,
+            "eventtype": 2,
+            "m_owner": "b91ecdac-cff7-415f-9b34-cff22811645b"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",

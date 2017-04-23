@@ -3,6 +3,10 @@
 global.roomMapping = ds_map_create();
 global.currentRoom = undefined;
 
+global.firstTutorialDone = false;
+global.secondTutorialDone = false;
+
+global.logoutActive = false;
 global.penalties = 0;
 global.positives = 0;
 global.prevTimeCost = 0;

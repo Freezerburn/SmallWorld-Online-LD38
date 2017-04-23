@@ -1,5 +1,9 @@
 /// @description Handle command
 
+if global.logoutActive {
+	exit;
+}
+
 var baseCommand = ds_list_find_value(command, 0);
 switch (baseCommand) {
 	case "quit":
