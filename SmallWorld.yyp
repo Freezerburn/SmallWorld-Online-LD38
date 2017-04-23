@@ -455,6 +455,14 @@
             }
         },
         {
+            "Key": "494698e6-bb43-4ad4-b5c2-6ce1b3e92e0e",
+            "Value": {
+                "id": "c6117981-ea8f-46d6-b85d-75936cebe777",
+                "resourcePath": "objects\\obj_WinFunctionalAddictMessage\\obj_WinFunctionalAddictMessage.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "49becb31-ec22-45d0-bf03-493b8b3ca3b2",
             "Value": {
                 "id": "a5c5d4d4-100e-4df8-93be-feb5a14b04b7",
@@ -1412,6 +1420,14 @@
                 "id": "77190cca-80dd-41a3-918b-19716bc69af3",
                 "resourcePath": "objects\\obj_WarningL2_GirlfriendNotice\\obj_WarningL2_GirlfriendNotice.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f7f93439-767f-4cf3-beee-ba8adf7affb8",
+            "Value": {
+                "id": "d8697df3-c0fc-4b7e-8aa9-70d60f94a554",
+                "resourcePath": "rooms\\room_GameWinFunctionalAddict\\room_GameWinFunctionalAddict.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

@@ -21,7 +21,11 @@ if global.accumulatedTimeCost > global.timeCostBeforePenalty {
 			ds_list_size(global.warningDefs[| global.announcementPool]) == 0) &&
 			// No going back once you get to the final penalties.
 			global.announcementPool < 2 {
-		room_goto(room_GameWin);
+		if global.announcementPool == 0 {
+			room_goto(room_GameWin);
+		} else if global.announcementPool == 1 {
+			room_goto(room_GameWinFunctionalAddict);
+		}
 		exit;
 	} else if global.accumulatedTimeCost == 0 &&
 			global.penalties == 0 &&
