@@ -4,6 +4,7 @@ var dir = argument0;
 var output = argument1;
 dir = StandardizeDirection(dir);
 if is_undefined(dir) {
+	ds_list_add(output, "I do not understand that direction.");
 	return undefined;
 }
 
