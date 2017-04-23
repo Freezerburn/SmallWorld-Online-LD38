@@ -66,6 +66,10 @@ if global.currentTimeCost >= global.timeCostBeforePenalty {
 			ds_list_add(global.standalonePenalties[|global.announcementPool],
 				[obj_PenaltyL1_UsualDelivery]);
 			ds_list_add(global.warningDefs[| global.announcementPool], [-1, -2]);
+			
+			ds_list_add(global.standalonePenalties[|global.announcementPool],
+				[obj_PenaltyL1_FriendGameNight]);
+			ds_list_add(global.warningDefs[| global.announcementPool], [-1, -2]);
 		}
 		
 		var objIdx = eventData[0];

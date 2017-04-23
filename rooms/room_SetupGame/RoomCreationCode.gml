@@ -20,11 +20,11 @@ global.currentTimeCost = 0;
 global.accumulatedTimeCost = 0;
 global.penaltiesAccumulated = ds_list_create();
 // TODO: Determine if this should be higher.
-global.timeCostDeathCondition = 8000000;
+global.timeCostDeathCondition = 800;
 
 // TODO: Determine if these shoudl be higher.
 global.timeCostBeforePenalty = 100;
-global.timeCostBeforeWarning = 70;
+global.timeCostBeforeWarning = 60;
 global.warningShown = false;
 global.positiveAnnouncements = ds_list_create();
 
@@ -54,7 +54,6 @@ ds_list_add(global.warningDefs[| 0], [obj_WarningL1_DateNightGirlfriend, 0]);
 ds_list_add(global.warningDefs[| 0], [obj_WarningL1_FamilyDinner, 1]);
 ds_list_add(global.warningDefs[| 0], [obj_WarningL1_PayBills, 2]);
 ds_list_add(global.warningDefs[| 0], [obj_WarningL1_Bedtime, -1]);
-ds_list_add(global.warningDefs[| 0], [-1, -2]);
 	
 ds_list_add(global.warningDefs, ds_list_create()); // bad pool
 ds_list_add(global.warningDefs[| 1], [-1, -2]);
@@ -77,7 +76,6 @@ ds_map_add(global.penaltyDefs[| 0], 1, [obj_PenaltyL1_FamilyDinner]);
 ds_map_add(global.penaltyDefs[| 0], 2, [obj_PenaltyL1_PayBills]);
 
 ds_list_add(global.standalonePenalties, ds_list_create());
-ds_list_add(global.standalonePenalties[| 0], [obj_PenaltyL1_FriendGameNight]);
 
 ds_list_add(global.penaltyDefs, ds_map_create()); // bad pool
 ds_map_add(global.penaltyDefs[| 1], 0, [obj_PenaltyL2_GirlfriendNotice]);
@@ -122,7 +120,7 @@ global.playerMaxHealth = 100;
 global.playerAttack = 10;
 global.playerDamageRandom = 2;
 global.playerDefense = 2;
-global.playerGold = 150000;
+global.playerGold = 150;
 
 global.playerHelmet = ["None", 0];
 global.playerArmor = ["Rags", 1];

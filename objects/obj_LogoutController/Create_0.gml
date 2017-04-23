@@ -80,6 +80,9 @@ if is_array(global.lastWarningDef) {
 		global.showPositiveAfter = 15 + round(random_range(-5, 15));
 		global.nextPositiveDef = obj_PositiveL2_ConcernedFriend;
 		break;
+	case obj_WarningL2_GirlfriendNotice:
+		global.showPositiveAfter = 15 + round(random_range(-5, 15));
+		global.nextPositiveDef = obj_PositiveL2_GirlfriendNotice;
 	}
 }
 global.lastWarningDef = 0;

@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "43334c59-9a3f-429d-a36e-29e2c600755f",
+            "Value": {
+                "id": "43bcd774-af04-4b93-a87d-4bd509fd566c",
+                "resourcePath": "sprites\\spr_PositiveL2_GirlfriendNotice\\spr_PositiveL2_GirlfriendNotice.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "43fa1faf-ed5f-41d2-a604-feea12a6a58e",
             "Value": {
                 "id": "2e09c40b-4534-47f9-adb1-877f39734e6e",
@@ -1044,6 +1052,14 @@
                 "id": "b7f2c682-0cff-488b-a863-3558b90f18df",
                 "resourcePath": "views\\d0e8dd3b-a7ed-45e5-9323-425866767d8b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d186613a-b473-4065-81c6-877477f54b2b",
+            "Value": {
+                "id": "c55ff511-ef9f-4271-ab66-bc699a76428e",
+                "resourcePath": "objects\\obj_PositiveL2_GirlfriendNotice\\obj_PositiveL2_GirlfriendNotice.yy",
+                "resourceType": "GMObject"
             }
         },
         {
