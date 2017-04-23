@@ -6,10 +6,10 @@ if global.logoutActive {
 
 var baseCommand = ds_list_find_value(command, 0);
 switch (baseCommand) {
-	case "quit":
-	case "q":
-		game_end();
-		break;
+	//case "quit":
+	//case "q":
+	//	game_end();
+	//	break;
 		
 	// General case of going a direction.
 	case "go":
@@ -319,8 +319,8 @@ switch (baseCommand) {
 		break;
 	
 	// TODO: Sell stuff?
-	case "sell":
-		break;
+	//case "sell":
+	//	break;
 		
 	// TODO: Implement fighting in the dungeon.
 	// Can ONLY use this in the dungeon to level up and stuff?
@@ -448,8 +448,8 @@ switch (baseCommand) {
 		break;
 		
 	// TODO: Print help.
-	case "help":
-		break;
+	//case "help":
+	//	break;
 		
 	default:
 		// TODO: Pick from a list of funny responses.
