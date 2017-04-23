@@ -9,8 +9,10 @@ global.prevTimeCost = 0;
 global.currentTimeCost = 0;
 
 global.accumulatedTimeCost = 0;
+// TODO: Determine if this should be higher.
 global.timeCostDeathCondition = 800;
 
+// TODO: Determine if these shoudl be higher.
 global.timeCostBeforePenalty = 100;
 global.timeCostBeforeWarning = 70;
 global.warningShown = false;
