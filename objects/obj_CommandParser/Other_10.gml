@@ -370,7 +370,7 @@ switch (baseCommand) {
 							global.playerLevel++;
 						}
 					} else {
-						ds_list_add(toWrite, "You died! You have lost 10% of your total experience and went back to town.");
+						ds_list_add(toWrite, "You died! You lost 10% of your total experience and went back to town.");
 						var xpLost = round(global.playerTotalExperience * 0.1);
 						global.playerTotalExperience -= xpLost;
 						global.playerExperience -= xpLost;
@@ -392,7 +392,7 @@ switch (baseCommand) {
 								global.playerAttack -= bonuses[1];
 								global.playerDefense -= bonuses[2];
 							
-								global.playerNextLevelExperience = global.experienceAmount[global.playerLevel - 1];
+								global.playerNextLevelExperience = global.experienceAmounts[global.playerLevel - 1];
 								global.playerExperience = global.playerNextLevelExperience + global.playerExperience;
 								// Can only lose 1 level at a time. Losing more than one at a time is more than
 								// I want to code right now.

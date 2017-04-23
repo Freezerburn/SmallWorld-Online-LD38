@@ -155,7 +155,7 @@ global.allMonsters = [
 	
 	// medium monsters
 	[
-		["Orc", 50, 15, 5, 8, 30, 15, 50, 20]
+		["Orc", 100, 20, 8, 10, 30, 15, 50, 20]
 	],
 	
 	// hard monsters
