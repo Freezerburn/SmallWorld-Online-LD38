@@ -83,19 +83,15 @@ if global.currentTimeCost >= global.timeCostBeforePenalty {
 	global.currentTimeCost = 0;
 	
 	global.penalties++;
-	if global.penalties > 4 {
+	if global.penalties > 7 {
+		if global.announcementPool == 1 {
+			global.announcementPool++;
+		} else if ds_list_size(global.penaltyDefs[| global.announcementPool]) == 0 {
+			room_goto(room_GameOver);
+			exit;
+		}
+	} else if global.announcementPool == 0 && global.penalties > 3 {
 		global.announcementPool++;
-	} else if global.penalties > 9 {
-		global.announcementPool++;
-	} else if global.penalties > 14 {
-		global.announcementPool++;
-	} else if global.penalties > 19 {
-		global.announcementPool++;
-	} else if global.penalties > 19 &&
-			 ds_list_size(global.penaltyDefs[| global.announcementPool]) == 0 {
-		// TODO: Implement game over room.
-		room_goto(room_GameOver);
-		exit;
 	}
 	
 } else if global.currentTimeCost >= global.timeCostBeforeWarning && !global.warningShown {
