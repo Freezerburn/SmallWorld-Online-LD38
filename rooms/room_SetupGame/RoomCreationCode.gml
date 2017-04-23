@@ -5,7 +5,11 @@ global.currentRoom = undefined;
 
 global.penalties = 0;
 global.positives = 0;
+global.prevTimeCost = 0;
 global.currentTimeCost = 0;
+
+global.accumulatedTimeCost = 0;
+global.timeCostDeathCondition = 800;
 
 global.timeCostBeforePenalty = 100;
 global.timeCostBeforeWarning = 70;

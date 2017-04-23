@@ -1,5 +1,14 @@
 /// @description Check for penalties
 
+var costDelta = global.currentTimeCost - global.prevTimeCost;
+global.prevTimeCost = global.currentTimeCost;
+if costDelta > 0 {
+	global.accumulatedTimeCost += costDelta;
+	if global.accumulatedTimeCost > global.timeCostDeathCondition {
+		room_goto(room_Death);
+	}
+}
+
 if global.currentTimeCost >= global.timeCostBeforePenalty {
 	global.penalties++;
 	var pool = global.penaltyDefs[| 0];
