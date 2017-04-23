@@ -17,6 +17,10 @@ global.positives = 0;
 global.prevTimeCost = 0;
 global.currentTimeCost = 0;
 
+global.showPositiveAfterBase = 15;
+global.showPositiveRangeLower = -5;
+global.showPositiveUpperRange = 15;
+
 global.accumulatedTimeCost = 0;
 global.penaltiesAccumulated = ds_list_create();
 // TODO: Determine if this should be higher.
@@ -58,6 +62,8 @@ ds_list_add(global.warningDefs[| 0], [obj_WarningL1_Bedtime, -1]);
 ds_list_add(global.warningDefs, ds_list_create()); // bad pool
 ds_list_add(global.warningDefs[| 1], [-1, -2]);
 ds_list_add(global.warningDefs[| 1], [-1, -2]);
+ds_list_add(global.warningDefs[| 1], [-1, -2]);
+ds_list_add(global.warningDefs[| 1], [-1, -2]);
 ds_list_add(global.warningDefs[| 1], [obj_WarningL2_GirlfriendNotice, 0]);
 ds_list_add(global.warningDefs[| 1], [obj_WarningL2_ConcernedFriend, 1]);
 
@@ -84,6 +90,8 @@ ds_map_add(global.penaltyDefs[| 1], 1, [obj_PenaltyL2_ConcernedFriend]);
 ds_list_add(global.standalonePenalties, ds_list_create());
 ds_list_add(global.standalonePenalties[| 1], [obj_PenaltyL2_DoctorHealth]);
 ds_list_add(global.standalonePenalties[| 1], [obj_PenaltyL2_BossAbsences]);
+ds_list_add(global.standalonePenalties[| 1], [obj_PenaltyL2_MintTakeoutFood]);
+ds_list_add(global.standalonePenalties[| 1], [obj_PenaltyL2_PayBills]);
 
 ds_list_add(global.penaltyDefs, ds_map_create()); // severe pool
 
@@ -94,11 +102,6 @@ global.nextPenaltyKeys = [
 	ds_map_size(global.penaltyDefs[| 1]),
 	ds_map_size(global.penaltyDefs[| 2]),
 ];
-
-global.positiveDefs = ds_list_create();
-ds_list_add(global.positiveDefs, ds_list_create()); // mild pool
-ds_list_add(global.positiveDefs, ds_list_create()); // bad pool
-ds_list_add(global.positiveDefs, ds_list_create()); // severe pool
 
 global.addedDeliveryPenalty = false;
 

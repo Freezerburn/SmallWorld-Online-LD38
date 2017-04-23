@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "0af2514e-cde4-4318-9cb0-5f797ef3b7e6",
+            "Value": {
+                "id": "ffed8518-f0b0-458c-8176-7c94541757dd",
+                "resourcePath": "sprites\\spr_PenaltyL2_MintTakeoutFood\\spr_PenaltyL2_MintTakeoutFood.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0de50623-a787-4b1f-a507-c9fbc8f6d863",
             "Value": {
                 "id": "b77f1d15-dd7c-4f65-91b9-1721a94196ca",
@@ -399,6 +407,14 @@
             }
         },
         {
+            "Key": "44bc451b-7ca6-4fd6-84f9-c6ed23464158",
+            "Value": {
+                "id": "a8ad240d-e933-4ce0-a739-8293805a679a",
+                "resourcePath": "objects\\obj_PenaltyL2_PayBills\\obj_PenaltyL2_PayBills.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "46229357-4193-49b7-8d9a-5f2c3479d63e",
             "Value": {
                 "id": "271b3fea-9e0e-4e6e-a849-c371895a8e48",
@@ -675,6 +691,14 @@
             "Value": {
                 "id": "f2733fbf-1f00-4a25-9e3d-d4f76a0d65cd",
                 "resourcePath": "objects\\obj_PenaltyL1_DateNightGirlfriend\\obj_PenaltyL1_DateNightGirlfriend.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "83093906-2410-47fb-8920-1729d8cc6ba7",
+            "Value": {
+                "id": "d2561157-e125-4b74-b9ed-bfaee7f8ac96",
+                "resourcePath": "objects\\obj_PenaltyL2_MintTakeoutFood\\obj_PenaltyL2_MintTakeoutFood.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1100,6 +1124,14 @@
                 "id": "a4666901-ad8c-4681-820c-139f0cdc7204",
                 "resourcePath": "objects\\obj_RoomDungeon\\obj_RoomDungeon.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d8de293e-6f08-4b6a-a199-0fb72a3eda24",
+            "Value": {
+                "id": "6980309e-e562-4a79-aacd-8bc05af2b022",
+                "resourcePath": "sprites\\spr_PenaltyL2_PayBills\\spr_PenaltyL2_PayBills.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

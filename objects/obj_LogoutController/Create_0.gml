@@ -65,23 +65,28 @@ if global.accumulatedTimeCost > global.timeCostBeforePenalty * 2 {
 if is_array(global.lastWarningDef) {
 	switch (global.lastWarningDef[0]) {
 	case obj_WarningL1_DateNightGirlfriend:
-		global.showPositiveAfter = 15 + round(random_range(-5, 15));
+		global.showPositiveAfter = global.showPositiveAfterBase
+			+ round(random_range(global.showPositiveRangeLower, global.showPositiveUpperRange));
 		global.nextPositiveDef = obj_PositiveL1_DateNightGirlfriend;
 		break;
 	case obj_WarningL1_MakeUpDinner:
-		global.showPositiveAfter = 15 + round(random_range(-5, 15));
+		global.showPositiveAfter = global.showPositiveAfterBase
+			+ round(random_range(global.showPositiveRangeLower, global.showPositiveUpperRange));
 		global.nextPositiveDef = obj_PositiveL1_MakeUpDinner;
 		break;
 	case obj_WarningL1_FamilyDinner:
-		global.showPositiveAfter = 15 + round(random_range(-5, 15));
+		global.showPositiveAfter = global.showPositiveAfterBase
+			+ round(random_range(global.showPositiveRangeLower, global.showPositiveUpperRange));
 		global.nextPositiveDef = obj_PositiveL1_FamilyDinner;
 		break;
 	case obj_WarningL2_ConcernedFriend:
-		global.showPositiveAfter = 15 + round(random_range(-5, 15));
+		global.showPositiveAfter = global.showPositiveAfterBase
+			+ round(random_range(global.showPositiveRangeLower, global.showPositiveUpperRange));
 		global.nextPositiveDef = obj_PositiveL2_ConcernedFriend;
 		break;
 	case obj_WarningL2_GirlfriendNotice:
-		global.showPositiveAfter = 15 + round(random_range(-5, 15));
+		global.showPositiveAfter = global.showPositiveAfterBase
+			+ round(random_range(global.showPositiveRangeLower, global.showPositiveUpperRange));
 		global.nextPositiveDef = obj_PositiveL2_GirlfriendNotice;
 	}
 }
