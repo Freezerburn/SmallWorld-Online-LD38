@@ -1,6 +1,5 @@
 /// @description
 
-event_inherited();
 visible = false;
 
 currentVisibleSms = 0;
@@ -19,4 +18,5 @@ currentSms.vspeed = 5;
 currentSms.x = room_width - sprite_width - 15;
 currentSms.y = -sprite_height - 5;
 
-secondsBetweenSms = 2;
+// Default, override if you want in child.
+secondsBetweenSms = 2; 

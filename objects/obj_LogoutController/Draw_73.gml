@@ -13,7 +13,7 @@ draw_set_alpha(currentAlpha);
 draw_rectangle(0, 0, room_width, room_height, false);
 
 if drawDayOutline {
-	draw_set_font(fnt_LoadingSmallWorld);
+	draw_set_font(fnt_LogoutSummary);
 	draw_set_color(c_white);
 	draw_set_alpha(textAlpha);
 	

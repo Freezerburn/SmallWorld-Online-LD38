@@ -15,12 +15,13 @@ global.currentTimeCost = 0;
 global.accumulatedTimeCost = 0;
 global.penaltiesAccumulated = ds_list_create();
 // TODO: Determine if this should be higher.
-global.timeCostDeathCondition = 800;
+global.timeCostDeathCondition = 8000000;
 
 // TODO: Determine if these shoudl be higher.
 global.timeCostBeforePenalty = 100;
 global.timeCostBeforeWarning = 70;
 global.warningShown = false;
+global.positiveAnnouncements = ds_list_create();
 
 // TODO: Figure out how to express all the warnings and whatnot.
 // Needs:
@@ -39,19 +40,39 @@ global.warningShown = false;
 // Only one pool of positive things? Or should how bad you're into the game reflect
 // what happens for positive things?
 global.lastWarningDef = -1;
+global.announcementPool = 0;
 global.warningDefs = ds_list_create();
 ds_list_add(global.warningDefs, ds_list_create()); // mild pool
 ds_list_add(global.warningDefs[| 0],
 	[obj_WarningL1_DateNightGirlfriend, 0]);
-//ds_list_add(global.warningDefs[| 0],
-//	[obj_WarningL1_FamilyDinner, 1]);
+ds_list_add(global.warningDefs[| 0],
+	[obj_WarningL1_FamilyDinner, 1]);
+ds_list_add(global.warningDefs[| 0],
+	[obj_WarningL1_PayBills, 2]);
+ds_list_add(global.warningDefs[| 0],
+	[obj_WarningL1_Bedtime, -1]);
+ds_list_add(global.warningDefs[| 0],
+	[-1, -2]);
+	
 ds_list_add(global.warningDefs, ds_list_create()); // bad pool
+
 ds_list_add(global.warningDefs, ds_list_create()); // severe pool
 
+global.tutorialPenalties = ds_list_create();
+ds_list_add(global.tutorialPenalties, obj_PenaltyL1_BossLate);
+
+// Penalties that do not have a warning associated with them.
+global.standalonePenalties = ds_list_create();
 global.penaltyDefs = ds_list_create();
+
 ds_list_add(global.penaltyDefs, ds_list_create()); // mild pool
-ds_list_add(global.penaltyDefs[| 0],
-	[obj_PenaltyL1_DateNightGirlfriend]);
+ds_list_add(global.penaltyDefs[| 0], [obj_PenaltyL1_DateNightGirlfriend]);
+ds_list_add(global.penaltyDefs[| 0], [obj_PenaltyL1_FamilyDinner]);
+ds_list_add(global.penaltyDefs[| 0], [obj_PenaltyL1_PayBills]);
+
+ds_list_add(global.standalonePenalties, ds_list_create());
+ds_list_add(global.standalonePenalties[| 0], [obj_PenaltyL1_FriendGameNight]);
+
 ds_list_add(global.penaltyDefs, ds_list_create()); // bad pool
 ds_list_add(global.penaltyDefs, ds_list_create()); // severe pool
 

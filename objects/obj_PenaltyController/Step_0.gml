@@ -11,11 +11,41 @@ if costDelta > 0 {
 
 if global.currentTimeCost >= global.timeCostBeforePenalty {
 	global.penalties++;
-	var pool = global.penaltyDefs[| 0];
-	var eventData = pool[| global.lastWarningDef[1]];
-	var objIdx = eventData[0];
-	ds_list_add(global.penaltiesAccumulated, eventData);
-	var penalty = instance_create_layer(999999, 999999, "NormalUI", objIdx);
+	//if global.penalties > 4 {
+	//	global.announcementPool++;
+	//} else if global.penalties > 9 {
+	//	global.announcementPool++;
+	//} else if global.penalties > 14 {
+	//	global.announcementPool++;
+	//} else if global.penalties > 19 {
+	//	global.announcementPool++;
+	//} else if ds_list_size(global.penaltyDefs[| global.announcementPool]) == 0 {
+	//	// TODO: Implement game over room.
+	//	room_goto(room_GameOver);
+	//	exit;
+	//}
+	
+	var pool = -1;
+	if global.lastWarningDef[1] == -1 {
+		ds_list_add(global.penaltiesAccumulated, global.lastWarningDef);
+		global.lastWarningDef = -1;
+		global.warningShown = false;
+		global.currentTimeCost = 0;
+		exit;
+	} else if global.lastWarningDef[0] == -1 {
+		pool = global.standalonePenalties[| global.announcementPool];
+		var chooseEvent = floor(random_range(0, ds_list_size(pool)));
+		var eventData = pool[| chooseEvent];
+		var objIdx = eventData[0];
+		ds_list_add(global.penaltiesAccumulated, eventData);
+		instance_create_layer(999999, 999999, "NormalUI", objIdx);
+	} else {
+		var pool = global.penaltyDefs[| global.announcementPool];
+		var eventData = pool[| global.lastWarningDef[1]];
+		var objIdx = eventData[0];
+		ds_list_add(global.penaltiesAccumulated, eventData);
+		instance_create_layer(999999, 999999, "NormalUI", objIdx);
+	}
 	
 	global.lastWarningDef = -1;
 	global.warningShown = false;
@@ -29,8 +59,11 @@ if global.currentTimeCost >= global.timeCostBeforePenalty {
 	var pool = global.warningDefs[| 0];
 	var eventIdx = floor(random_range(0, ds_list_size(pool)));
 	var eventData = pool[| eventIdx];
-	var objIdx = eventData[0];
-	var warning = instance_create_layer(9999999, 99999999, "NormalUI", objIdx);
+	
+	if eventData[0] != -1 {
+		var objIdx = eventData[0];
+		var warning = instance_create_layer(9999999, 99999999, "NormalUI", objIdx);
+	}
 	
 	global.lastWarningDef = eventData;
 }

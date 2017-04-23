@@ -14,8 +14,9 @@ finishLogout = false;
 if global.accumulatedTimeCost > global.timeCostBeforePenalty {
 	decayData = DecayExperience(0.1);
 } else {
-	// Worse decay for playing well.
+	// Worse decay for being controlled.
 	decayData = DecayExperience(0.2);
+	global.positives++;
 }
 
 if global.accumulatedTimeCost > global.timeCostBeforePenalty * 2 {
@@ -31,7 +32,12 @@ if global.accumulatedTimeCost > global.timeCostBeforePenalty * 2 {
 		switch (penaltyData[0]) {
 		case obj_PenaltyL1_DateNightGirlfriend:
 			mainTextToDraw += "\nYou're going to need to try and make things up with your " +
-				"girlfriend today.";
+				"girlfriend after missing your date night...";
+			break;
+		case obj_WarningL1_Bedtime:
+			mainTextToDraw = "After ignoring the alarm you set to ensure you got to " +
+				"bed on time, you couldn't manage to get up in time when your alarm " +
+				"goes off for work. Your boss was angry that you got in late again.";
 			break;
 		}
 	}
@@ -47,14 +53,14 @@ if decayData[1] > 0 {
 	decayText += "\nYou have lost a level due to this decay.";
 }
 
-draw_set_font(fnt_LoadingSmallWorld);
+draw_set_font(fnt_LogoutSummary);
 mainTextWidth = string_width_ext(mainTextToDraw, -1, 700);
 mainTextHeight = string_height_ext(mainTextToDraw, -1, 700);
 decayTextWidth = string_width_ext(decayText, -1, 700);
 decayTextHeight = string_height_ext(decayText, -1, 700);
 
-timeBeforeFadeOut = (string_length(mainTextToDraw) * 0.1 +
-	string_length(decayText) * 0.1) * room_speed;
+timeBeforeFadeOut = (string_length(mainTextToDraw) * 0.07 +
+	string_length(decayText) * 0.07) * room_speed;
 
 global.logoutActive = true;
 global.accumulatedTimeCost = 0;

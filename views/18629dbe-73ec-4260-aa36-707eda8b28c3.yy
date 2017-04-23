@@ -4,8 +4,9 @@
     "mvc": "1.1",
     "name": "18629dbe-73ec-4260-aa36-707eda8b28c3",
     "children": [
-        "6e745fce-5903-4c44-80cd-de98ab2d8f79",
-        "e6c4539d-0609-4c9a-9382-9d78ea8bec32"
+        "06ea3730-9a31-4e55-9302-8eb78d246ca7",
+        "af252ae0-96d7-4ab1-8da5-10ffe9133ce3",
+        "c529747a-6077-4e67-83da-c4ffa92507ae"
     ],
     "filterType": "GMSprite",
     "folderName": "Warnings",
