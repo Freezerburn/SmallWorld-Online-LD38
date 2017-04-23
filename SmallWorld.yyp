@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "074852c7-bc5a-4b49-8303-a4e56d20e6d0",
+            "Value": {
+                "id": "9b84433a-5349-4abc-97ea-05f4b7bc44e0",
+                "resourcePath": "objects\\obj_PenaltyL3_BankOverdrawn\\obj_PenaltyL3_BankOverdrawn.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "07b914b0-e8d5-462d-9aa0-53853eb56b72",
             "Value": {
                 "id": "5303da2b-6250-460f-b91c-a35b2c7da392",
@@ -148,6 +156,14 @@
                 "id": "2ddecdb1-5b02-4c60-a338-1d52256c0bd0",
                 "resourcePath": "sprites\\spr_PositiveL1_FamilyDinner\\spr_PositiveL1_FamilyDinner.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1d4601b0-3ac0-4d03-8c99-30e062bd7a47",
+            "Value": {
+                "id": "43159b0a-ff75-4916-8201-f3275c285d4c",
+                "resourcePath": "objects\\obj_PenaltyL3_PowerShutoff\\obj_PenaltyL3_PowerShutoff.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -367,6 +383,14 @@
             }
         },
         {
+            "Key": "41481682-ad0e-44d2-a460-8f99b459e8f8",
+            "Value": {
+                "id": "a80a9d97-4e37-42a1-a975-5a670cab7a64",
+                "resourcePath": "sprites\\spr_PenaltyL3_Overdrawn\\spr_PenaltyL3_Overdrawn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "43334c59-9a3f-429d-a36e-29e2c600755f",
             "Value": {
                 "id": "43bcd774-af04-4b93-a87d-4bd509fd566c",
@@ -404,6 +428,14 @@
                 "id": "d2184362-3d2a-48d4-a5b4-15a6130fbbca",
                 "resourcePath": "rooms\\room_LoadingSmallWorld\\room_LoadingSmallWorld.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "44b56f7d-f0ed-48c2-80fc-9a046f3c6eb5",
+            "Value": {
+                "id": "173c3833-1a29-48af-8be3-f80a584697a6",
+                "resourcePath": "objects\\obj_PenaltyL3_DoctorSerious\\obj_PenaltyL3_DoctorSerious.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -919,6 +951,14 @@
             }
         },
         {
+            "Key": "b1a3191b-74d9-47a0-915d-f6b535656e08",
+            "Value": {
+                "id": "878f3b0a-050e-4da9-b49a-62d15e20d7f7",
+                "resourcePath": "sprites\\spr_PenaltyL3_DoctorSerious\\spr_PenaltyL3_DoctorSerious.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b91ecdac-cff7-415f-9b34-cff22811645b",
             "Value": {
                 "id": "4af4a1e3-1cbc-4fec-a266-b5787112a44d",
@@ -932,6 +972,14 @@
                 "id": "dd806e10-7c16-4417-ac7b-32ede19df19a",
                 "resourcePath": "views\\b9558914-8fa2-4ffa-9109-0dbd02346a17.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b98dbf63-4abf-4aec-9325-fb8a08630305",
+            "Value": {
+                "id": "dacf2eea-f453-4281-a226-cfdaaf988261",
+                "resourcePath": "sprites\\spr_PenaltyL3_GirlfriendBreakup\\spr_PenaltyL3_GirlfriendBreakup.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -972,6 +1020,14 @@
                 "id": "ac9855f6-b7e8-44b7-a1f3-016e19002ceb",
                 "resourcePath": "views\\c1b23a3b-1ff9-466d-ad57-9e9183a9e11b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c2b5614a-ef24-454b-8a7a-535369ca75fd",
+            "Value": {
+                "id": "d505dd67-4c21-4b95-ae8d-41349a4cdb3d",
+                "resourcePath": "sprites\\spr_PenaltyL3_PayBills\\spr_PenaltyL3_PayBills.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1068,6 +1124,14 @@
                 "id": "1e31cdda-616f-4046-bf96-64624059789e",
                 "resourcePath": "sprites\\spr_Shield\\spr_Shield.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ce98ca42-df2f-45d3-9aee-e405645734e5",
+            "Value": {
+                "id": "cc2cd2a9-f1de-4026-9d44-b83946c15a05",
+                "resourcePath": "objects\\obj_PenaltyL3_PayBills\\obj_PenaltyL3_PayBills.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1247,6 +1311,14 @@
             }
         },
         {
+            "Key": "ea0ded2e-2b7a-4b07-abe8-aed824e4bec9",
+            "Value": {
+                "id": "e6618aaf-1b74-4e0c-a002-6cc9bceedf79",
+                "resourcePath": "sprites\\spr_PenaltyL3_PowerShutoff\\spr_PenaltyL3_PowerShutoff.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "eadaf161-1036-4092-b431-bef2752e3a4a",
             "Value": {
                 "id": "ed06613f-2097-4c0e-9425-a38e2a1300c6",
@@ -1348,6 +1420,14 @@
                 "id": "d5f3ea02-0d7d-46b4-a3bf-1f2d053a6dfa",
                 "resourcePath": "views\\fb6dc310-7053-4ffa-86c5-f4502924f87e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fcab8797-a435-4872-ba95-5cb5e01e8b28",
+            "Value": {
+                "id": "69c89489-7b24-401c-9949-25b7a1975fdd",
+                "resourcePath": "objects\\obj_PenaltyL3_GirlfriendBreakup\\obj_PenaltyL3_GirlfriendBreakup.yy",
+                "resourceType": "GMObject"
             }
         },
         {

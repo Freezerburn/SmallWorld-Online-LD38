@@ -24,11 +24,11 @@ global.showPositiveUpperRange = 15;
 global.accumulatedTimeCost = 0;
 global.penaltiesAccumulated = ds_list_create();
 // TODO: Determine if this should be higher.
-global.timeCostDeathCondition = 800;
+global.timeCostDeathCondition = 1500;
 
 // TODO: Determine if these shoudl be higher.
-global.timeCostBeforePenalty = 100;
-global.timeCostBeforeWarning = 60;
+global.timeCostBeforePenalty = 300;
+global.timeCostBeforeWarning = 220;
 global.warningShown = false;
 global.positiveAnnouncements = ds_list_create();
 
@@ -68,6 +68,10 @@ ds_list_add(global.warningDefs[| 1], [obj_WarningL2_GirlfriendNotice, 0]);
 ds_list_add(global.warningDefs[| 1], [obj_WarningL2_ConcernedFriend, 1]);
 
 ds_list_add(global.warningDefs, ds_list_create()); // severe pool
+ds_list_add(global.warningDefs[| 2], [-1, -2]);
+ds_list_add(global.warningDefs[| 2], [-1, -2]);
+ds_list_add(global.warningDefs[| 2], [-1, -2]);
+ds_list_add(global.warningDefs[| 2], [-1, -2]);
 
 global.tutorialPenalties = ds_list_create();
 ds_list_add(global.tutorialPenalties, obj_PenaltyL1_BossLate);
@@ -96,6 +100,10 @@ ds_list_add(global.standalonePenalties[| 1], [obj_PenaltyL2_PayBills]);
 ds_list_add(global.penaltyDefs, ds_map_create()); // severe pool
 
 ds_list_add(global.standalonePenalties, ds_list_create());
+ds_list_add(global.standalonePenalties[| 2], [obj_PenaltyL3_BankOverdrawn]);
+ds_list_add(global.standalonePenalties[| 2], [obj_PenaltyL3_PayBills]);
+ds_list_add(global.standalonePenalties[| 2], [obj_PenaltyL3_DoctorSerious]);
+ds_list_add(global.standalonePenalties[| 2], [obj_PenaltyL3_GirlfriendBreakup]);
 
 global.nextPenaltyKeys = [
 	ds_map_size(global.penaltyDefs[| 0]),

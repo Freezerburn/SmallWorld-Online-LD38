@@ -34,7 +34,6 @@ if global.currentTimeCost >= global.timeCostBeforePenalty {
 			global.announcementPool++;	
 		} else if global.penalties > 19 &&
 				 ds_map_size(global.penaltyDefs[| global.announcementPool]) == 0 {
-			// TODO: Implement game over room.
 			room_goto(room_GameOver);
 			exit;
 		}
@@ -58,6 +57,12 @@ if global.currentTimeCost >= global.timeCostBeforePenalty {
 			ds_map_add(pool, addKey, [obj_PenaltyL1_MakeUpDinner]);
 			ds_list_add(global.warningDefs[| global.announcementPool],
 				[obj_WarningL1_MakeUpDinner, addKey]);
+		}
+		if eventData[0] == obj_PenaltyL3_PayBills {
+			var addKey = global.nextPenaltyKeys[global.announcementPool]++;
+			ds_map_add(pool, addKey, [obj_PenaltyL3_PowerShutoff]);
+			ds_list_add(global.warningDefs[| global.announcementPool],
+				[-1, -2]);
 		}
 		if global.announcementPool == 0 && ds_map_size(pool) < 2 &&
 				!global.addedDeliveryPenalty {
