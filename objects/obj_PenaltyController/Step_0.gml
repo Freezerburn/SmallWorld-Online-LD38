@@ -9,6 +9,12 @@ if costDelta > 0 {
 	}
 }
 
+if global.currentTimeCost >= global.showPositiveAfter && global.nextPositiveDef != -1 {
+	instance_create_layer(999999, 999999, "NormalUI", global.nextPositiveDef);
+	global.nextPositiveDef = -1;
+	global.showPositiveAfter = -1;
+}
+
 if global.currentTimeCost >= global.timeCostBeforePenalty {
 	global.penalties++;
 	//if global.penalties > 4 {

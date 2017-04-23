@@ -40,6 +40,8 @@ global.positiveAnnouncements = ds_list_create();
 // Only one pool of positive things? Or should how bad you're into the game reflect
 // what happens for positive things?
 global.lastWarningDef = -1;
+global.nextPositiveDef = -1;
+global.showPositiveAfter = -1;
 global.announcementPool = 0;
 global.warningDefs = ds_list_create();
 ds_list_add(global.warningDefs, ds_list_create()); // mild pool

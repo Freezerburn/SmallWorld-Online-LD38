@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "27ec770b-0c6e-4aef-baa6-77dc0e12925d",
+            "Value": {
+                "id": "12a8db16-cc8a-4f76-8073-2eaaa857f746",
+                "resourcePath": "views\\27ec770b-0c6e-4aef-baa6-77dc0e12925d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2884b7c0-eb21-47e8-bc3a-91829f945417",
             "Value": {
                 "id": "81fa5a43-bc1b-44c4-a3ad-b2ca66b8f0f6",
@@ -188,6 +196,22 @@
                 "id": "55e77286-5490-4476-ab99-8a564f5548d6",
                 "resourcePath": "objects\\obj_RoomBlacksmith\\obj_RoomBlacksmith.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2fcff91b-190c-4a2d-a527-b5781789b638",
+            "Value": {
+                "id": "39227b87-49e6-4949-9a5e-7b72e630dc8f",
+                "resourcePath": "views\\2fcff91b-190c-4a2d-a527-b5781789b638.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3210b35c-f774-40f5-a92b-16f1f1c92b04",
+            "Value": {
+                "id": "de4264ce-8258-4f19-8a94-f7943bf7f34c",
+                "resourcePath": "views\\3210b35c-f774-40f5-a92b-16f1f1c92b04.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -375,10 +399,34 @@
             }
         },
         {
+            "Key": "5bfe1c91-9473-444e-bbdf-05daddcaabc7",
+            "Value": {
+                "id": "8a8be595-d2f2-4400-be96-2ad547954a68",
+                "resourcePath": "views\\5bfe1c91-9473-444e-bbdf-05daddcaabc7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "5d4b5e99-4496-472b-aa8e-739b18f0e056",
             "Value": {
                 "id": "34d296d4-2a55-4190-bf2a-f9256533b87d",
                 "resourcePath": "views\\5d4b5e99-4496-472b-aa8e-739b18f0e056.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6005372a-50ee-4f20-a71d-1f050aff31cf",
+            "Value": {
+                "id": "765dd17b-9627-4943-8c06-27d7320576bb",
+                "resourcePath": "views\\6005372a-50ee-4f20-a71d-1f050aff31cf.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "61fb3085-cb7f-490f-a3b8-609503ecaf52",
+            "Value": {
+                "id": "86359726-86bd-4cb9-9423-e667f25a0120",
+                "resourcePath": "views\\61fb3085-cb7f-490f-a3b8-609503ecaf52.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -471,6 +519,14 @@
             }
         },
         {
+            "Key": "73d94712-da4a-49fd-9524-56532ff07463",
+            "Value": {
+                "id": "f2f93133-a6e0-4bcf-a9d6-7002afd02088",
+                "resourcePath": "views\\73d94712-da4a-49fd-9524-56532ff07463.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "78006ed2-0fc1-4066-99c7-97a483432717",
             "Value": {
                 "id": "0c8d0012-f50d-4610-a07b-f309859835a6",
@@ -508,6 +564,14 @@
                 "id": "2e3ef451-7cc6-461e-87d7-6ff3e3c133b8",
                 "resourcePath": "objects\\obj_SimpleUISprite\\obj_SimpleUISprite.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7c8b4281-1d7b-4b8d-8758-50938f2b8790",
+            "Value": {
+                "id": "3a00e3fa-bedf-4b1c-a201-a0784043696b",
+                "resourcePath": "sprites\\spr_PositiveL1_DateNightGirlfriend\\spr_PositiveL1_DateNightGirlfriend.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -815,6 +879,14 @@
             }
         },
         {
+            "Key": "cc430ca5-b3d0-438b-b99f-99fe126e7949",
+            "Value": {
+                "id": "7242c4a7-1bef-429e-b523-f673d5ced028",
+                "resourcePath": "objects\\obj_PositiveL1_DateNightGirlfriend\\obj_PositiveL1_DateNightGirlfriend.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "9da366b2-3f07-435e-aa8a-dc6f3fbe3118",
@@ -851,6 +923,14 @@
             "Value": {
                 "id": "b784d34c-1ded-4689-8b26-c5dac9d91200",
                 "resourcePath": "views\\d46296ae-e397-456b-ab3d-8918638ca282.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d463e361-48fb-43a4-a343-b5feb6050b6a",
+            "Value": {
+                "id": "caf97dc6-9261-442d-ad35-c05c4af3ebaf",
+                "resourcePath": "views\\d463e361-48fb-43a4-a343-b5feb6050b6a.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -1036,6 +1116,14 @@
                 "id": "70eff2ce-d33d-40bb-8036-c43ea94fdb52",
                 "resourcePath": "sprites\\spr_WarningL1_MakeUpDinner\\spr_WarningL1_MakeUpDinner.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fa5c2f86-8349-4a15-a2af-0445a3007a77",
+            "Value": {
+                "id": "ed251f28-2af4-4947-a2b9-a2e13c243dc5",
+                "resourcePath": "views\\fa5c2f86-8349-4a15-a2af-0445a3007a77.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

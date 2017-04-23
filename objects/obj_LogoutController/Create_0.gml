@@ -22,7 +22,7 @@ if global.accumulatedTimeCost > global.timeCostBeforePenalty {
 if global.accumulatedTimeCost > global.timeCostBeforePenalty * 2 {
 	mainTextToDraw = "Having played SmallWorld Online for an extended period of time, " +
 		"you collapse exhausted and get some rest. But it's not enough to make up for " +
-		"the time you spend awake... However, you have achieved many things in the game!";
+		"the time you spent awake... However, you have achieved many things in the game!";
 } else if global.accumulatedTimeCost > global.timeCostBeforePenalty {
 	mainTextToDraw = "You go to bed late, not quite getting enough sleep for the next " +
 		"day.";
@@ -34,6 +34,9 @@ if global.accumulatedTimeCost > global.timeCostBeforePenalty * 2 {
 			mainTextToDraw += "\nYou're going to need to try and make things up with your " +
 				"girlfriend after missing your date night...";
 			break;
+		case obj_PenaltyL1_MakeUpDinner:
+			mainTextToDraw += "\nYour girlfriend is pissed that you stood her up twice in " +
+				"such a short period of time. Best to let her cool down for a bit...";
 		case obj_WarningL1_Bedtime:
 			mainTextToDraw = "After ignoring the alarm you set to ensure you got to " +
 				"bed on time, you couldn't manage to get up in time when your alarm " +
@@ -45,6 +48,17 @@ if global.accumulatedTimeCost > global.timeCostBeforePenalty * 2 {
 } else {
 	mainTextToDraw = "You log out of SmallWorld Online and enjoy a nice " +
 		"night, getting plenty of rest for the next day.";
+}
+
+switch (global.lastWarningDef[0]) {
+case obj_WarningL1_DateNightGirlfriend:
+	global.showPositiveAfter = 15 + round(random_range(-5, 15));
+	global.nextPositiveDef = obj_PositiveL1_DateNightGirlfriend;
+	break;
+case obj_WarningL1_MakeUpDinner:
+	break;
+case obj_WarningL1_FamilyDinner:
+	break;
 }
 
 decayText = "Your experience has decayed " + string(decayData[0]) + " points while " +

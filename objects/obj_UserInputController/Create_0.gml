@@ -5,6 +5,7 @@
 charObjectsArray = ds_list_create();
 textLayer = layer_get_id("TextUI");
 textToHandle = "";
+lastText = "";
 
 draw_set_font(fnt_UserInput);
 var testString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
