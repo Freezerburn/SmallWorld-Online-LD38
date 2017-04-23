@@ -36,6 +36,46 @@ switch (baseCommand) {
 		
 	// TODO: Workflow for talking.
 	case "talk":
+		switch (global.currentRoom.name) {
+		case "Town":
+			switch (global.eventName) {
+			default:
+				ds_list_add(toWrite, "Town Crier: \"There's nothing going on right now.\"");
+				break;
+			}
+			break;
+		case "Tavern":
+			switch (global.eventName) {
+			default:
+				ds_list_add(toWrite, "Tavern Keeper: \"Ach, there be nothing going on right now laddie.\"");
+				break;
+			}
+			break;
+		case "Blacksmith":
+			ds_list_add(toWrite, "Blacksmith: \"I'm to busy to be talking with ye right now.\"");
+			break;
+		default:
+			ds_list_add(toWrite, "There's no one to talk to here.");
+			break;
+		}
+		break;
+		
+	case "rest":
+		if global.currentRoom.name == "Tavern" {
+			if global.playerHealth == global.playerMaxHealth {
+				ds_list_add(toWrite, "You have no need to rest right now.");
+			} else {
+				if global.playerGold < 10 {
+					ds_list_add(toWrite, "Tavern Keeper: \"You don't have enough money! It costs 10 gold to stay the night.\"");
+				} else {
+					ds_list_add(toWrite, "You pay 10 gold to the tavern keeper to rest to full health.");
+					global.playerGold -= 10;
+					global.playerHealth = global.playerMaxHealth;
+				}
+			}	
+		} else {
+			ds_list_add(toWrite, "You cannot rest here.");
+		}
 		break;
 		
 	case "cost":

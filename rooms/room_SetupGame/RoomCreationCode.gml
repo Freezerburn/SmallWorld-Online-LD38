@@ -56,6 +56,7 @@ global.buyTimeCost = 2;
 global.dungeonTimeCost = 10;
 global.dailyQuestTimeCost = 5;
 global.eventTimeCost = 15;
+global.restTimeCost = 5;
 
 global.playerLevel = 1;
 global.playerTotalExperience = 0;
@@ -172,6 +173,10 @@ global.allMonsters = [
 		["Incepticus, the Ever-Diving",
 			5000, 5000, 300, 10000, 5000, 20000, 10000]
 	]
+];
+
+global.eventName = "none";
+global.allEvents = [
 ];
 
 room_goto_next();
