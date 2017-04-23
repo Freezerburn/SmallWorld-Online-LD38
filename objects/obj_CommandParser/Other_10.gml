@@ -462,6 +462,7 @@ switch (baseCommand) {
 		
 	// TODO: workflow for logging out.
 	case "logout":
+		event_user(1); 
 		break;
 		
 	// TODO: Print help.

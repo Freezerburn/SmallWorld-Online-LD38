@@ -1,5 +1,9 @@
 /// @description Insert, input char
 
+if global.logoutActive {
+	exit;
+}
+
 if keyboard_lastkey == vk_return {
 	for (var i = 0; i < ds_list_size(charObjectsArray); i++) {
 		var instance = ds_list_find_value(charObjectsArray, i);

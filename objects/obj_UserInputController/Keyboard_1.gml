@@ -1,5 +1,9 @@
 /// @description Delete chars with delay
 
+if global.logoutActive {
+	exit;
+}
+
 if keyboard_lastkey == vk_backspace && canKey {
 	if ds_list_size(charObjectsArray) == 0 {
 		exit;
