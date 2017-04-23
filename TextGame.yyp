@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "2556b1b8-a408-4f40-a332-511efdadcded",
+            "Value": {
+                "id": "029e5b34-f2d0-43b2-95ff-afc6f98d2efc",
+                "resourcePath": "objects\\obj_WinMessage\\obj_WinMessage.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2761118d-2088-4cbe-bd31-662b4ecb689d",
             "Value": {
                 "id": "650b704b-6153-450b-9815-e343e8e61a24",
@@ -292,6 +300,14 @@
                 "id": "16965fb0-c38a-4d51-a879-d87a36da10a6",
                 "resourcePath": "sprites\\spr_PenaltyL2_BossAbsences\\spr_PenaltyL2_BossAbsences.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3b2e8f8c-97a3-488a-a695-e7806ec22d68",
+            "Value": {
+                "id": "3e6a864b-f165-4b34-bb45-0db5fb959cb6",
+                "resourcePath": "objects\\obj_WinMessageNoPlay\\obj_WinMessageNoPlay.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -788,6 +804,14 @@
                 "id": "342d0e58-a49e-407e-92b2-2bd87de8f283",
                 "resourcePath": "objects\\obj_PenaltyL1_UsualDelivery\\obj_PenaltyL1_UsualDelivery.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a601ecb8-1225-4d32-a45a-e2a42405e0b4",
+            "Value": {
+                "id": "ef492372-9109-4bdd-baab-0c0a805b20cc",
+                "resourcePath": "rooms\\room_GameWinNoPlay\\room_GameWinNoPlay.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

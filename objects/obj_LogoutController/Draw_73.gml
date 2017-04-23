@@ -33,6 +33,9 @@ if drawDayOutline {
 	draw_text_ext(room_width / 2 - decayTextWidth / 2,
 		100 + mainTextHeight + 50,
 		decayText, -1, 700);
+	draw_text_ext(room_width / 2 - pressKeyWidth / 2,
+		100 + mainTextHeight + 50 + decayTextHeight + 50,
+		pressKeyText, -1, 700);
 }
 
 if finishLogout {
