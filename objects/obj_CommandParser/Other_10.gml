@@ -370,10 +370,11 @@ switch (baseCommand) {
 							global.playerLevel++;
 						}
 					} else {
-						ds_list_add(toWrite, "You died! You lost 10% of your total experience and went back to town.");
-						var xpLost = round(global.playerTotalExperience * 0.1);
+						ds_list_add(toWrite, "You died! You lost 10% of your total experience and resurrected outside of the dungeon.");
+						var xpLost = ceil(global.playerTotalExperience * 0.1);
 						global.playerTotalExperience -= xpLost;
 						global.playerExperience -= xpLost;
+						global.playerHealth = global.playerMaxHealth;
 						
 						if global.playerExperience < 0 {
 							if global.playerLevel == 1 {
