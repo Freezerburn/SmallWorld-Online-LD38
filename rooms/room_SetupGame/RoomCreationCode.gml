@@ -128,8 +128,8 @@ global.playerExperience = 0;
 global.playerNextLevelExperience = 20;
 global.playerHealth = 100;
 global.playerMaxHealth = 100;
-global.playerAttack = 10;
-global.playerDamageRandom = 2;
+global.playerAttack = 9;
+global.playerDamageRandom = 1;
 global.playerDefense = 2;
 global.playerGold = 150;
 
@@ -153,7 +153,13 @@ global.allHelmets = [
 	["Hard Leather Cap", 700, 3],
 	["Shiny Hard Hat", 800, 1],
 	["Tin Helmet", 1000, 3],
-	["Double Tin Helmet", 1200, 3]
+	["Double Tin Helmet", 1200, 3],
+	["Iron Helmet", 2400, 5],
+	["Crusader Helmet", 3600, 7],
+	["Hyper Hard Helmet", 7000, 10],
+	["Rainbow Helmet", 15000, 20],
+	["Ultra Hard Helmet", 30000, 30],
+	["Ultima Helmet", 100000, 100],
 ];
 global.allArmor = [
 	["None", 0, 0],
@@ -165,6 +171,12 @@ global.allArmor = [
 	["Semi-Soft Leather Shirt", 800, 2],
 	["Semi-Hard Leather Shirt", 1000, 2],
 	["Chainmail Necktie", 1200, 3],
+	["Actual Chainmail", 2400, 5],
+	["Knight Armor", 3600, 7],
+	["Hyper Armor", 8000, 10],
+	["Rainbow Armor", 15000, 20],
+	["Ultra Armor", 30000, 30],
+	["Ultima Armor", 100000, 100],
 ];
 // Weapons have an additional value: damage randomness
 // This basically is used in a random_range to modify the
@@ -180,6 +192,19 @@ global.allWeapons = [
 	["Tiny Dagger", 500, 10, 4],
 	["Normal Dagger", 800, 10, 4],
 	["Short Sword", 1000, 12, 8],
+	["Normal Sword", 1500, 13, 7],
+	["Long Sword", 2000, 8, 2],
+	["Super Long Sword", 3000, 8, 3],
+	["Why is it so long? Sword", 5000, 10, 3],
+	["Broadsword", 7000, 15, 4],
+	["Extra Broad Sword", 10000, 25, 5],
+	["For the Ladies Sword", 15000, 30, 5],
+	["Claymore", 20000, 40, 10],
+	["Braveheart's Claymore", 30000, 50, 15],
+	["Hyper Sword", 50000, 70, 20],
+	["Ultra Sword", 80000, 90, 30],
+	["Rainbow Sword", 120000, 120, 40],
+	["Ultima Sword", 500000, 800, 800],
 ];
 global.allShields = [
 	["None", 0, 0],
@@ -192,6 +217,11 @@ global.allShields = [
 	["Buckler", 1800, 5],
 	["Kite Shield", 2500, 6],
 	["Tower Shield", 4500, 7],
+	["Super Shield", 9000, 10],
+	["Ultra Shield", 12000, 20],
+	["Hyper Shield", 15000, 40],
+	["Rainbow Shield", 25000, 60],
+	["Ultima Shield", 100000, 200],
 ];
 global.allPants = [
 	["None", 0, 0],
@@ -204,6 +234,13 @@ global.allPants = [
 	["Thick, Comfy Pants", 1100, 3],
 	["Shin Pads", 1300, 3],
 	["Greaves", 2000, 4],
+	["Iron Greaves", 4000, 4],
+	["Titanium Greaves", 7000, 8],
+	["Super Greaves", 12000, 12],
+	["Ultra Greaves", 20000, 20],
+	["Hyper Greaves", 30000, 30],
+	["Rainbow Greaves", 50000, 50],
+	["Ultima Greaves", 120000, 200],
 ];
 global.allBoots = [
 	["None", 0, 0],
@@ -217,6 +254,12 @@ global.allBoots = [
 	["Heavy Metal Shoes", 2000, 4],
 	["Air Jordans", 2500, 4],
 	["Fancy Shoes", 3500, 5],
+	["Super Fancy Shoes", 5000, 7],
+	["Ultra Fancy Shoes", 8000, 10],
+	["Hyper Fancy Shoes", 12000, 14],
+	["MEGA Shoes", 20000, 25],
+	["Rainbow Shoes", 30000, 45],
+	["Ultima Shoes", 100000, 120],
 ];
 
 global.experienceAmounts = [
@@ -249,6 +292,27 @@ global.experienceAmounts = [
 	80000, //28
 	90000, //29
 	100000, //30
+	200000, //31
+	300000, //32
+	400000, //33
+	500000, //34
+	600000, //35
+	700000, //36
+	800000, //37
+	900000, //38
+	1000000, //39
+	1100000, //40
+	1200000, //41
+	1300000, //42
+	1400000, //43
+	1500000, //44
+	1600000, //45
+	1700000, //46
+	1800000, //47
+	1900000, //48
+	2000000, //49
+	2100000, //50
+	9999999999999999999 //51
 ];
 // Bonuses have the format+
 // +HP, +attack, +defense
@@ -283,6 +347,27 @@ global.levelBonuses = [
 	[130, 19, 8], //28
 	[130, 19, 9], //29
 	[132, 20, 9], //30
+	[132, 20, 9], //31
+	[132, 20, 9], //32
+	[132, 20, 9], //33
+	[132, 20, 9], //34
+	[132, 20, 9], //35
+	[132, 20, 9], //36
+	[132, 20, 9], //37
+	[132, 20, 9], //38
+	[132, 20, 9], //39
+	[132, 20, 9], //40
+	[132, 20, 9], //41
+	[132, 20, 9], //42
+	[132, 20, 9], //43
+	[132, 20, 9], //44
+	[132, 20, 9], //45
+	[132, 20, 9], //46
+	[132, 20, 9], //47
+	[132, 20, 9], //48
+	[132, 20, 9], //49
+	[132, 20, 9], //50
+	[132, 20, 9], //51
 ];
 
 // Monster data has layer:
@@ -299,27 +384,36 @@ global.MONSTER_GOLD_RANDOM = 8;
 global.allMonsters = [
 	// easy monsters
 	[
-		["Slime",           10, 3, 1, 1, 2, 2, 8, 2],
-		["Goblin",          15, 4, 2, 2, 5, 3, 12, 5],
-		["Imp",             8,  5, 1, 5, 5, 5, 12, 5],
-		["Noodle Demon",    12, 4, 2, 3, 4, 5, 14, 6],
-		["Nasal Demon",     12, 4, 1, 2, 6, 2, 15, 4],
-		["Styrofoam Golem", 11, 4, 3, 2, 6, 4, 13, 6],
+		["Slime",           19, 10, 5, 5, 3, 2, 8,  2],
+		["Goblin",          25, 11, 6, 6, 5, 3, 12, 5],
+		["Imp",             18, 9,  8, 8, 5, 5, 12, 5],
+		["Noodle Demon",    22, 13, 3, 3, 4, 5, 14, 6],
+		["Nasal Demon",     22, 15, 9, 9, 6, 2, 15, 4],
+		["Styrofoam Golem", 21, 15, 5, 5, 6, 4, 13, 6],
+		["Giant Rat",       15, 10, 6, 7, 7, 7, 10, 10],
+		["Giant Spider",    16, 10, 7, 7, 7, 7, 10, 10],
+		["Kobold",          17, 8,  7, 7, 7, 7, 10, 10],
 	],
 	
 	// medium monsters
 	[
-		["Orc",         100, 20, 8,  10, 30, 15, 50, 20],
-		["Fire Demon",  110, 30, 10, 5,  50, 20, 70, 30],
-		["Blue Slime",  120, 25, 10, 12, 50, 30, 80, 30],
-		["Cloth Golem", 130, 18, 12, 8,  40, 25, 70, 40],
+		["Orc",                 170, 30, 8,  25, 30, 15, 50, 20],
+		["Fire Demon",          110, 40, 10, 20, 50, 20, 70, 30],
+		["Blue Slime",          120, 35, 10, 29, 50, 30, 80, 30],
+		["Cloth Golem",         130, 28, 12, 23, 40, 25, 70, 40],
+		["Poison Giant Spider", 140, 20, 80, 30, 80, 40, 80, 80],
+		["Udon Demon",          130, 40, 30, 25, 60, 40, 80, 80],
+		["Mediocre Witch",      100, 20, 60, 23, 80, 80, 80, 80],
 	],
 	
 	// hard monsters
 	[
-		["Fire Dragon",  500, 100, 50,  40, 200, 100, 300, 100],
-		["Metal Slime", 1000,  80, 40, 100, 500, 300, 800, 800],
-		["Rock Golem",  1000,  90, 50,  90, 400, 400, 600, 200],
+		["Fire Dragon",              500, 100, 50,   60, 200, 100, 300, 100],
+		["Metal Slime",              1000,  80, 40, 100, 500, 300, 800, 800],
+		["Rock Golem",               1000,  90, 50,  90, 400, 400, 600, 200],
+		["Ultrabeast",               800, 120, 40,  110, 600, 400, 800, 300],
+		["Chimera",                  1100, 50, 120,  80, 700, 300, 900, 200],
+		["Corrupted Black Magician",  600, 50, 250,  40, 1200, 500, 1200, 500],
 	],
 	
 	// extreme monsters

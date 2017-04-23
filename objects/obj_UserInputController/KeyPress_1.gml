@@ -24,6 +24,7 @@ if keyboard_lastkey == vk_up {
 		var instance = ds_list_find_value(charObjectsArray, i);
 		instance_destroy(instance);
 	}
+	ds_list_clear(charObjectsArray);
 	currentHorzLoc = startingHorzLoc;
 	
 	for (var i = 1; i < string_length(lastText) + 1; i++) {

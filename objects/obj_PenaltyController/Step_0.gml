@@ -28,11 +28,7 @@ if global.currentTimeCost >= global.timeCostBeforePenalty {
 			global.announcementPool++;
 		} else if global.penalties > 9 {
 			global.announcementPool++;
-		} else if global.penalties > 14 {
-			global.announcementPool++;
-		} else if global.penalties > 19 {
-			global.announcementPool++;	
-		} else if global.penalties > 19 &&
+		} else if global.penalties > 14 &&
 				 ds_map_size(global.penaltyDefs[| global.announcementPool]) == 0 {
 			room_goto(room_GameOver);
 			exit;

@@ -17,7 +17,10 @@ if global.accumulatedTimeCost > global.timeCostBeforePenalty {
 	// Worse decay for being controlled.
 	decayData = DecayExperience(0.2);
 	
-	if global.positives + 1 > 10 || ds_list_size(global.warningDefs[| global.announcementPool]) == 0 {
+	if (global.positives + 1 > 20 ||
+			ds_list_size(global.warningDefs[| global.announcementPool]) == 0) &&
+			// No going back once you get to the final penalties.
+			global.announcementPool < 2 {
 		room_goto(room_GameWin);
 		exit;
 	} else if global.accumulatedTimeCost == 0 &&
@@ -58,8 +61,14 @@ if global.accumulatedTimeCost > global.timeCostBeforePenalty * 2 {
 	}
 	ds_list_clear(global.penaltiesAccumulated);
 } else {
-	mainTextToDraw = "You log out of SmallWorld Online and enjoy a nice " +
-		"night, getting plenty of rest for the next day.";
+	if global.announcementPool < 2 {
+		mainTextToDraw = "You log out of SmallWorld Online and enjoy a nice " +
+			"night, getting plenty of rest for the next day.";
+	} else {
+		mainTextToDraw = "You log out of SmallWorld Online, but don't really get much " +
+			"sleep. You keep thinking about playing the game more, and before long you're " +
+			"awake again and playing.";
+	}
 }
 
 if is_array(global.lastWarningDef) {
