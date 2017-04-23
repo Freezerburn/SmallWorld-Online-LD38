@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "1b1d56c1-d7fe-454b-9371-f5f340bbc6cd",
+            "Value": {
+                "id": "2ddecdb1-5b02-4c60-a338-1d52256c0bd0",
+                "resourcePath": "sprites\\spr_PositiveL1_FamilyDinner\\spr_PositiveL1_FamilyDinner.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1fa2cb0a-ccff-4212-aee7-dd0fabc5b397",
             "Value": {
                 "id": "c07e8fb9-9ee9-4d7d-9d74-f5a1c8cdc8a1",
@@ -527,6 +535,14 @@
             }
         },
         {
+            "Key": "75f171ec-cdae-485c-af6d-d207bb725103",
+            "Value": {
+                "id": "02c7ecac-0199-4081-a334-980eafdee9bc",
+                "resourcePath": "sprites\\spr_PositiveL1_MakeUpDinner\\spr_PositiveL1_MakeUpDinner.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "78006ed2-0fc1-4066-99c7-97a483432717",
             "Value": {
                 "id": "0c8d0012-f50d-4610-a07b-f309859835a6",
@@ -871,6 +887,14 @@
             }
         },
         {
+            "Key": "c9029f1f-dacc-488c-a895-fcb787c5c9b2",
+            "Value": {
+                "id": "429f3008-02f3-47a7-80aa-ded85dfa3bec",
+                "resourcePath": "objects\\obj_PositiveL1_FamilyDinner\\obj_PositiveL1_FamilyDinner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c98aeaf5-7807-465d-8f35-4bb9e24a2ad5",
             "Value": {
                 "id": "37a020f8-6fba-499c-a9bc-2dbe48a69d62",
@@ -1156,6 +1180,14 @@
                 "id": "a57fb763-d90f-4b9a-b27f-fbbc8c895cd2",
                 "resourcePath": "scripts\\EquipmentCost\\EquipmentCost.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ffe46dfd-4dae-4d96-84fb-bd44f8661246",
+            "Value": {
+                "id": "efec1962-cf38-484b-9307-fba1fc310ceb",
+                "resourcePath": "objects\\obj_PositiveL1_MakeUpDinner\\obj_PositiveL1_MakeUpDinner.yy",
+                "resourceType": "GMObject"
             }
         }
     ],

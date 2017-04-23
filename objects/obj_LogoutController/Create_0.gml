@@ -56,8 +56,12 @@ case obj_WarningL1_DateNightGirlfriend:
 	global.nextPositiveDef = obj_PositiveL1_DateNightGirlfriend;
 	break;
 case obj_WarningL1_MakeUpDinner:
+	global.showPositiveAfter = 15 + round(random_range(-5, 15));
+	global.nextPositiveDef = obj_PositiveL1_MakeUpDinner;
 	break;
 case obj_WarningL1_FamilyDinner:
+	global.showPositiveAfter = 15 + round(random_range(-5, 15));
+	global.nextPositiveDef = obj_PositiveL1_FamilyDinner;
 	break;
 }
 
