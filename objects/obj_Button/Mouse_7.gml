@@ -1,5 +1,9 @@
 /// @description
 
+if global.logoutActive {
+	exit;
+}
+
 if image_index == 2 {
 	var tmpNumber = userEventNumber;
 	with (callbackInstance) {
