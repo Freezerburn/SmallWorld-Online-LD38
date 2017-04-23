@@ -1,5 +1,10 @@
 //show_debug_overlay(true);
 
+global.seenTutorial = false;
+
+global.roomsSeen = ds_map_create();
+ds_map_put(global.roomsSeen, "Town", true);
+
 global.roomMapping = ds_map_create();
 global.currentRoom = undefined;
 
