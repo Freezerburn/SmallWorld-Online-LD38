@@ -647,6 +647,22 @@
             }
         },
         {
+            "Key": "a11d7cf0-19fe-40f1-b6ac-7cf4f7dfb510",
+            "Value": {
+                "id": "342d0e58-a49e-407e-92b2-2bd87de8f283",
+                "resourcePath": "objects\\obj_PenaltyL1_UsualDelivery\\obj_PenaltyL1_UsualDelivery.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a8bc5fc7-ddbc-41e1-8ccc-3ce0d2f25989",
+            "Value": {
+                "id": "761714e8-8f82-42e9-aa22-62ee8294c859",
+                "resourcePath": "objects\\obj_PenaltyL1_MakeUpDinner\\obj_PenaltyL1_MakeUpDinner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "9d1083e4-5727-427c-8e65-fd4fb00e5d76",
@@ -772,6 +788,14 @@
                 "id": "5c2134dc-8a81-4f09-8684-6ebaa0868414",
                 "resourcePath": "objects\\obj_SMSAnnouncement\\obj_SMSAnnouncement.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c817bd0d-0b67-4a00-96da-d756eeed8f5d",
+            "Value": {
+                "id": "ca1f981c-d0c0-424c-adec-e53af8ae8dce",
+                "resourcePath": "sprites\\spr_PenaltyL1_UsualDelivery\\spr_PenaltyL1_UsualDelivery.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -951,6 +975,14 @@
             }
         },
         {
+            "Key": "ef2e9a19-2b7c-4db4-b62d-36a01445d0d4",
+            "Value": {
+                "id": "d5804d80-0af0-4a9d-aa7c-18b49fd1430e",
+                "resourcePath": "sprites\\spr_PenaltyL1_MakeUpDinner\\spr_PenaltyL1_MakeUpDinner.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f133bee5-a43a-434e-9b81-f211437f4249",
             "Value": {
                 "id": "e770ff84-d7e0-4a62-8cb5-c82e70b4f7b2",
@@ -988,6 +1020,22 @@
                 "id": "a022192e-3c30-4911-a3ee-8180f0ddf6b6",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f50d8913-6d48-4ce0-ab33-843ff3671752",
+            "Value": {
+                "id": "a75efca6-96f4-4bd1-97e4-8b42a6bce22c",
+                "resourcePath": "objects\\obj_WarningL1_MakeUpDinner\\obj_WarningL1_MakeUpDinner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f9020370-5cad-44b5-a121-c4e21d6bab54",
+            "Value": {
+                "id": "70eff2ce-d33d-40bb-8036-c43ea94fdb52",
+                "resourcePath": "sprites\\spr_WarningL1_MakeUpDinner\\spr_WarningL1_MakeUpDinner.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

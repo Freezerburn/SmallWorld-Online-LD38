@@ -36,12 +36,30 @@ if global.currentTimeCost >= global.timeCostBeforePenalty {
 		pool = global.standalonePenalties[| global.announcementPool];
 		var chooseEvent = floor(random_range(0, ds_list_size(pool)));
 		var eventData = pool[| chooseEvent];
+		ds_list_delete(pool, chooseEvent);
 		var objIdx = eventData[0];
 		ds_list_add(global.penaltiesAccumulated, eventData);
 		instance_create_layer(999999, 999999, "NormalUI", objIdx);
 	} else {
 		var pool = global.penaltyDefs[| global.announcementPool];
-		var eventData = pool[| global.lastWarningDef[1]];
+		var eventData = pool[? global.lastWarningDef[1]];
+		
+		ds_map_delete(pool, global.lastWarningDef[1]);
+		if eventData[0] == obj_PenaltyL1_DateNightGirlfriend {
+			var addKey = global.nextPenaltyKeys[global.announcementPool]++;
+			ds_map_add(pool, addKey, [obj_PenaltyL1_MakeUpDinner]);
+			ds_list_add(global.warningDefs[| global.announcementPool],
+				[obj_WarningL1_MakeUpDinner, addKey]);
+		}
+		if global.announcementPool == 0 && ds_map_size(pool) < 2 &&
+				!global.addedDeliveryPenalty {
+			global.addedDeliveryPenalty = true;
+			var addKey = global.nextPenaltyKeys[global.announcementPool]++;
+			ds_list_add(global.standalonePenalties[|global.announcementPool],
+				[obj_PenaltyL1_UsualDelivery]);
+			ds_list_add(global.warningDefs[| global.announcementPool], [-1, -2]);
+		}
+		
 		var objIdx = eventData[0];
 		ds_list_add(global.penaltiesAccumulated, eventData);
 		instance_create_layer(999999, 999999, "NormalUI", objIdx);
@@ -56,9 +74,10 @@ if global.currentTimeCost >= global.timeCostBeforePenalty {
 	global.warningShown = true;
 	//global.currentTimeCost = 69;
 	
-	var pool = global.warningDefs[| 0];
+	var pool = global.warningDefs[| global.announcementPool];
 	var eventIdx = floor(random_range(0, ds_list_size(pool)));
 	var eventData = pool[| eventIdx];
+	ds_list_delete(pool, eventIdx);
 	
 	if eventData[0] != -1 {
 		var objIdx = eventData[0];
